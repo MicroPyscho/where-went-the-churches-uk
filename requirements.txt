@@ -1,0 +1,11 @@
+pandas
+requests
+geopy
+tenacity
+rich
+typer
+openpyxl
+sqlalchemy
+fuzz
+python-dotenv
+thefuzz
