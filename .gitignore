@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+
+# Environment variables — never commit
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# All data files — too large for GitHub
+data/raw/
+data/output/
+data/processed/
+
+# OSM planet extract
+*.pbf
+*.osm
+
+# Pipeline log
+pipeline.log
+
+# Mac junk
+.DS_Store
+
+# Checkpoint files
+enrichment_checkpoint.json
+denomination_checkpoint.json
