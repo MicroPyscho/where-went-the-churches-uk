@@ -1,0 +1,330 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0a0500;--parch:#1a0f00;--gold:#C8A060;--gold2:#8B6914;--ember:#E8D4A0;
+  --border:#3a2000;--dim:#5c3a10;
+}
+body{background:var(--ink);color:var(--ember);font-family:'IM Fell English',serif}
+.cinzel{font-family:'Cinzel',serif}
+</style>
+
+<div style="background:#0a0500;min-height:600px;display:grid;grid-template-rows:auto 1fr auto">
+
+  <div style="border-bottom:1px solid #3a2000;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(180deg,#140a00,#0a0500)">
+    <div style="display:flex;align-items:center;gap:14px">
+      <svg width="28" height="28" viewBox="0 0 28 28">
+        <polygon points="14,2 16,10 24,10 18,15 20,23 14,18 8,23 10,15 4,10 12,10" fill="none" stroke="#C8A060" stroke-width="1.2" stroke-opacity="0.7"/>
+        <line x1="14" y1="6" x2="14" y2="22" stroke="#8B1A1A" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="2 2"/>
+        <line x1="8" y1="12" x2="20" y2="12" stroke="#8B1A1A" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="2 2"/>
+        <path d="M18 11a5 5 0 1 1-7.07-4.57A6 6 0 0 0 18 11z" fill="#C8A060" fill-opacity="0.8"/>
+      </svg>
+      <div>
+        <p class="cinzel" style="font-size:13px;color:#C8A060;letter-spacing:.2em">SACRED SPACES</p>
+        <p style="font-size:10px;color:#5c3a10;letter-spacing:.15em">UK CHURCH CONVERSION RECORD · MMXXVI</p>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <div id="active-label" style="font-size:10px;color:#8B6914;padding:4px 10px;border:1px solid #3a2000;border-radius:2px;font-family:'Cinzel',serif;letter-spacing:.1em">ALL CONVERSIONS</div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:180px 1fr 180px;min-height:520px">
+
+    <aside style="border-right:1px solid #3a2000;padding:14px;overflow-y:auto;background:linear-gradient(180deg,#140a00,#0f0800);display:flex;flex-direction:column;gap:14px">
+
+      <div style="border:1px solid #3a2000;border-radius:2px;overflow:hidden">
+        <div class="cinzel" style="background:#1a0f00;padding:6px 10px;font-size:9px;color:#8B6914;letter-spacing:.15em;border-bottom:1px solid #3a2000">THE COUNT</div>
+        <div style="padding:10px">
+          <div id="stats-list" style="display:flex;flex-direction:column;gap:8px"></div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #3a2000;border-radius:2px;overflow:hidden">
+        <div class="cinzel" style="background:#1a0f00;padding:6px 10px;font-size:9px;color:#8B6914;letter-spacing:.15em;border-bottom:1px solid #3a2000">FINDING</div>
+        <div style="padding:10px">
+          <p style="font-size:11px;color:#C8A060;line-height:1.8;font-style:italic">"Taverns outnumber mosques <strong>1.8×</strong> as heirs to the sacred nave."</p>
+          <p style="font-size:11px;color:#C8A060;line-height:1.8;font-style:italic;margin-top:8px">"Community halls claim <strong>14.5%</strong> — the untold majority."</p>
+        </div>
+      </div>
+
+      <div style="border:1px solid #3a2000;border-radius:2px;overflow:hidden">
+        <div class="cinzel" style="background:#1a0f00;padding:6px 10px;font-size:9px;color:#8B6914;letter-spacing:.15em;border-bottom:1px solid #3a2000">SOURCES</div>
+        <div style="padding:10px;display:flex;flex-direction:column;gap:6px">
+          <div style="display:flex;align-items:center;gap:6px"><div style="width:6px;height:6px;background:#C8A060;border-radius:50%"></div><span style="font-size:10px;color:#8B6914">Wikidata SPARQL</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><div style="width:6px;height:6px;background:#C8A060;border-radius:50%"></div><span style="font-size:10px;color:#8B6914">OpenStreetMap</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><div style="width:6px;height:6px;background:#C8A060;border-radius:50%"></div><span style="font-size:10px;color:#8B6914">Historic England</span></div>
+          <div style="display:flex;align-items:center;gap:6px"><div style="width:6px;height:6px;background:#C8A060;border-radius:50%"></div><span style="font-size:10px;color:#8B6914">Planning Portal</span></div>
+        </div>
+      </div>
+
+    </aside>
+
+    <div style="display:flex;flex-direction:column;background:#080400">
+      <div style="padding:8px 14px;border-bottom:1px solid #3a2000;display:flex;gap:6px;flex-wrap:wrap;align-items:center">
+        <span class="cinzel" style="font-size:9px;color:#5c3a10;letter-spacing:.1em;margin-right:4px">FILTER</span>
+        <div id="filter-btns" style="display:flex;gap:5px;flex-wrap:wrap"></div>
+      </div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:16px">
+        <svg id="ukmap" viewBox="60 20 220 380" width="100%" style="max-height:420px;cursor:crosshair"></svg>
+      </div>
+      <div id="pin-card" style="display:none;padding:12px 16px;border-top:1px solid #3a2000;background:#0f0800"></div>
+    </div>
+
+    <aside style="border-left:1px solid #3a2000;padding:14px;overflow-y:auto;background:linear-gradient(180deg,#140a00,#0f0800);display:flex;flex-direction:column;gap:14px">
+
+      <div style="border:1px solid #3a2000;border-radius:2px;overflow:hidden">
+        <div class="cinzel" style="background:#1a0f00;padding:6px 10px;font-size:9px;color:#8B6914;letter-spacing:.15em;border-bottom:1px solid #3a2000">BY REGION</div>
+        <div id="region-list" style="padding:8px 10px;display:flex;flex-direction:column;gap:4px"></div>
+      </div>
+
+      <div style="border:1px solid #3a2000;border-radius:2px;overflow:hidden">
+        <div class="cinzel" style="background:#1a0f00;padding:6px 10px;font-size:9px;color:#8B6914;letter-spacing:.15em;border-bottom:1px solid #3a2000">BESTIARY</div>
+        <div id="bestiary" style="padding:10px;display:flex;flex-direction:column;gap:8px"></div>
+      </div>
+
+    </aside>
+  </div>
+
+  <div style="border-top:1px solid #3a2000;background:#060300;padding:8px 20px;display:flex;gap:24px;align-items:center">
+    <div id="footer-stats" style="display:flex;gap:24px;align-items:center"></div>
+    <div id="footer-right" class="cinzel" style="margin-left:auto;font-size:9px;color:#3a2000;letter-spacing:.12em">✦ SACRED SPACES · MMXXVI ✦</div>
+  </div>
+
+</div>
+
+<script>
+const TYPES = [
+  {id:"mosque",      label:"Mosque",      color:"#8B1A1A", sym:"crescent", count:32,   desc:"House of the Crescent"},
+  {id:"hospitality", label:"Tavern",      color:"#8B3500", sym:"martini",  count:94,   desc:"Alehouse & Inn"},
+  {id:"residential", label:"Dwelling",    color:"#1a3d6b", sym:"key",      count:1498, desc:"Private Dwelling"},
+  {id:"community",   label:"Community",   color:"#2D5A2D", sym:"people",   count:289,  desc:"Hall of the People"},
+  {id:"arts",        label:"Arts",        color:"#5a1a3d", sym:"curtain",  count:50,   desc:"Theatre & Gallery"},
+  {id:"other_faith", label:"Other Faith", color:"#7a4a00", sym:"star",     count:43,   desc:"Other Creed"},
+  {id:"education",   label:"Education",   color:"#1a3d1a", sym:"book",     count:499,  desc:"School & Library"},
+  {id:"commercial",  label:"Commerce",    color:"#3a2a5a", sym:"trade",    count:85,   desc:"Commerce & Trade"},
+  {id:"unknown",     label:"Unknown",     color:"#4a3a1a", sym:"cross",    count:21100,desc:"Fate Unknown"},
+];
+
+const REGIONS = [
+  {id:"scotland",  name:"Scotland",       dominant:"arts",        records:60 },
+  {id:"nw",        name:"North West",     dominant:"mosque",      records:287},
+  {id:"yorkshire", name:"Yorkshire",      dominant:"residential", records:198},
+  {id:"westmid",   name:"West Midlands",  dominant:"mosque",      records:241},
+  {id:"london",    name:"London",         dominant:"mosque",      records:312},
+  {id:"southeast", name:"South East",     dominant:"hospitality", records:201},
+  {id:"southwest", name:"South West",     dominant:"arts",        records:134},
+  {id:"wales",     name:"Wales",          dominant:"residential", records:76 },
+  {id:"northeast", name:"North East",     dominant:"community",   records:89 },
+];
+
+const PINS = [
+  {id:1,  x:161, y:148, type:"mosque",      name:"Former St Alban's, Manchester",    city:"Manchester"},
+  {id:2,  x:168, y:155, type:"mosque",      name:"Former St Peter's, Birmingham",    city:"Birmingham"},
+  {id:3,  x:170, y:195, type:"mosque",      name:"Former St Mary's, Whitechapel",    city:"London"},
+  {id:4,  x:155, y:170, type:"mosque",      name:"Former St Joseph's, Leeds",        city:"Leeds"},
+  {id:5,  x:150, y:143, type:"hospitality", name:"The Old Nave (pub), Liverpool",    city:"Liverpool"},
+  {id:6,  x:143, y:200, type:"hospitality", name:"The Old Chapel Taproom, Bristol",  city:"Bristol"},
+  {id:7,  x:172, y:193, type:"hospitality", name:"The Church (cocktail bar), Soho",  city:"London"},
+  {id:8,  x:160, y:168, type:"residential", name:"Chapel Mews Apartments, Bradford", city:"Bradford"},
+  {id:9,  x:143, y:201, type:"residential", name:"The Old Chapel, Bath",             city:"Bath"},
+  {id:10, x:171, y:192, type:"arts",        name:"Hackney Empire (theatre)",         city:"London"},
+  {id:11, x:131, y:87,  type:"arts",        name:"The Old Kirk Gallery, Glasgow",    city:"Glasgow"},
+  {id:12, x:145, y:198, type:"community",   name:"Gloucester Community Hub",         city:"Gloucester"},
+  {id:13, x:166, y:180, type:"other_faith", name:"Former Methodist, now Gurdwara",   city:"Birmingham"},
+  {id:14, x:164, y:173, type:"education",   name:"Former Christ Church, now Academy",city:"Sheffield"},
+  {id:15, x:165, y:121, type:"commercial",  name:"Holy Trinity Gym, Newcastle",      city:"Newcastle"},
+];
+
+function typeColor(id){return TYPES.find(t=>t.id===id)?.color??"#4a3a1a"}
+
+let activeFilters = [];
+let selectedPin = null;
+
+function makeSym(type, size=16){
+  const col = typeColor(type);
+  const s = `<svg width="${size}" height="${size}" viewBox="0 0 20 20">`;
+  if(type==="mosque") return s+`<line x1="10" y1="2" x2="10" y2="18" stroke="${col}" stroke-width="1.2" stroke-dasharray="2 2" stroke-opacity=".4"/><line x1="4" y1="7" x2="16" y2="7" stroke="${col}" stroke-width="1.2" stroke-dasharray="2 2" stroke-opacity=".4"/><path d="M14 9a5 5 0 1 1-7.07-4.07A6 6 0 0 0 14 9z" fill="${col}" fill-opacity=".9"/><circle cx="15" cy="5" r="1.2" fill="${col}"/></svg>`;
+  if(type==="hospitality") return s+`<path d="M9 3h2l-1 5h-1L9 3z" stroke="${col}" stroke-width=".8" stroke-dasharray="2 2" stroke-opacity=".35" fill="none"/><path d="M5 4l5 7 5-7H5z" fill="${col}" fill-opacity=".9"/><line x1="10" y1="11" x2="10" y2="16" stroke="${col}" stroke-width="1.8"/><line x1="7" y1="16" x2="13" y2="16" stroke="${col}" stroke-width="1.8"/><circle cx="14" cy="5.5" r="1.1" fill="${col}"/></svg>`;
+  if(type==="residential") return s+`<circle cx="7" cy="9" r="3" stroke="${col}" stroke-width="1.3" fill="none"/><circle cx="7" cy="9" r="1.3" fill="${col}" fill-opacity=".6"/><path d="M9.5 11.5l5 5" stroke="${col}" stroke-width="1.3" stroke-linecap="round"/><path d="M13 14.5l1.2-1.2M14 15.5l1.2-1.2" stroke="${col}" stroke-width="1.2" stroke-linecap="round"/></svg>`;
+  if(type==="arts") return s+`<circle cx="10" cy="9" r="5" stroke="${col}" stroke-width=".8" stroke-dasharray="2 2" fill="none" stroke-opacity=".3"/><path d="M5 4c0 0 2.5 3.5 5 3.5S15 4 15 4" stroke="${col}" stroke-width="1.4" fill="none"/><path d="M5 4v11" stroke="${col}" stroke-width="1.4"/><path d="M15 4v11" stroke="${col}" stroke-width="1.4"/><circle cx="10" cy="9" r="1.8" fill="${col}" fill-opacity=".7"/></svg>`;
+  if(type==="community") return s+`<circle cx="7" cy="7" r="2.2" fill="${col}" fill-opacity=".8"/><circle cx="13" cy="7" r="2.2" fill="${col}" fill-opacity=".8"/><circle cx="10" cy="14" r="2.2" fill="${col}"/><path d="M7 9.2c0 2 1.1 3.3 3 4M13 9.2c0 2-1.1 3.3-3 4" stroke="${col}" stroke-width=".9" stroke-opacity=".5"/></svg>`;
+  if(type==="other_faith") return s+`<line x1="10" y1="3" x2="10" y2="17" stroke="${col}" stroke-width=".9" stroke-dasharray="2 2" stroke-opacity=".3"/><line x1="5" y1="8" x2="15" y2="8" stroke="${col}" stroke-width=".9" stroke-dasharray="2 2" stroke-opacity=".3"/><polygon points="10,3 11.8,7.5 17,7.5 13,10.5 14.5,15.5 10,12.5 5.5,15.5 7,10.5 3,7.5 8.2,7.5" fill="${col}" fill-opacity=".85"/></svg>`;
+  if(type==="education") return s+`<rect x="4" y="4" width="12" height="13" rx="1.2" fill="${col}" fill-opacity=".85"/><line x1="4" y1="7" x2="16" y2="7" stroke="#0a0500" stroke-width=".8"/><line x1="6.5" y1="10" x2="13.5" y2="10" stroke="#0a0500" stroke-width=".8" stroke-opacity=".5"/><line x1="6.5" y1="12" x2="11" y2="12" stroke="#0a0500" stroke-width=".8" stroke-opacity=".5"/><path d="M4 4c0-1 3-2 6-2s6 1 6 2" stroke="${col}" stroke-width="1.2" stroke-opacity=".7" fill="none"/></svg>`;
+  if(type==="commercial") return s+`<rect x="5" y="8" width="10" height="9" rx="1" fill="${col}" fill-opacity=".85"/><path d="M5 8c0-3 10-3 10 0" stroke="${col}" stroke-width="1.2" fill="none"/><line x1="10" y1="8" x2="10" y2="4" stroke="${col}" stroke-width="1.2"/><polygon points="10,2 12,5 8,5" fill="${col}"/></svg>`;
+  return s+`<line x1="10" y1="2" x2="10" y2="18" stroke="${col}" stroke-width="1.5" stroke-dasharray="3 2"/><line x1="4" y1="7" x2="16" y2="7" stroke="${col}" stroke-width="1.5" stroke-dasharray="3 2"/><circle cx="10" cy="12" r="3" fill="none" stroke="${col}" stroke-width="1"/></svg>`;
+}
+
+function buildStats(){
+  const el = document.getElementById("stats-list");
+  const items = [
+    {label:"Churches catalogued", value:"23,690", col:"#C8A060"},
+    {label:"Confirmed conversions", value:"2,590",  col:"#E8D4A0"},
+    {label:"Become mosques",      value:"32",    col:"#8B1A1A"},
+    {label:"Become taverns",      value:"94",    col:"#8B3500"},
+    {label:"Become dwellings",    value:"1,498", col:"#1a3d6b"},
+    {label:"Become halls",        value:"289",   col:"#2D5A2D"},
+  ];
+  el.innerHTML = items.map(s=>`
+    <div style="border-bottom:1px solid #2a1500;padding-bottom:7px">
+      <p style="font-size:9px;color:#8B6914;letter-spacing:.1em;font-family:'Cinzel',serif">${s.label.toUpperCase()}</p>
+      <p style="font-size:18px;color:${s.col};font-weight:bold;font-family:'Cinzel',serif;margin-top:2px">${s.value}</p>
+    </div>`).join("");
+}
+
+function buildFilters(){
+  const el = document.getElementById("filter-btns");
+  el.innerHTML = TYPES.filter(t=>t.id!=="unknown").map(t=>`
+    <button onclick="toggleFilter('${t.id}')" id="f-${t.id}" style="
+      background:none;border:1px solid ${t.color}44;border-radius:2px;
+      color:${t.color};font-size:9px;padding:3px 7px;cursor:pointer;
+      font-family:'Cinzel',serif;letter-spacing:.08em;transition:all .2s;
+      display:flex;align-items:center;gap:4px
+    ">${makeSym(t.id,12)} ${t.label.toUpperCase()}</button>`).join("");
+}
+
+function toggleFilter(id){
+  if(activeFilters.includes(id)) activeFilters=activeFilters.filter(f=>f!==id);
+  else activeFilters.push(id);
+  document.querySelectorAll("[id^='f-']").forEach(b=>{
+    const tid=b.id.replace("f-","");
+    const active=activeFilters.length===0||activeFilters.includes(tid);
+    b.style.opacity=active?"1":"0.3";
+    b.style.borderColor=active?typeColor(tid)+"88":typeColor(tid)+"22";
+  });
+  document.getElementById("active-label").textContent=
+    activeFilters.length===0?"ALL CONVERSIONS":activeFilters.map(f=>TYPES.find(t=>t.id===f)?.label||f).join(", ").toUpperCase();
+  renderPins();
+}
+
+const UK_OUTLINE = "M170,30 L175,28 L180,32 L178,38 L183,40 L181,45 L185,50 L182,55 L179,58 L183,62 L180,68 L175,72 L178,78 L175,82 L170,85 L172,90 L168,95 L165,100 L162,106 L158,112 L155,118 L152,124 L148,130 L145,136 L142,142 L140,148 L138,154 L135,160 L133,166 L130,172 L128,178 L130,184 L133,190 L138,195 L142,200 L148,204 L155,207 L162,208 L168,210 L172,215 L175,220 L178,226 L180,232 L182,238 L180,244 L177,250 L173,255 L170,260 L167,265 L165,270 L163,276 L161,282 L159,288 L158,294 L157,300 L156,306 L155,312 L153,316 L150,318 L147,320 L143,318 L140,315 L136,312 L132,308 L128,304 L124,300 L120,296 L117,292 L114,288 L112,284 L110,279 L108,274 L108,268 L110,263 L113,258 L116,253 L118,248 L119,242 L118,236 L115,231 L112,226 L108,222 L104,218 L100,214 L97,210 L95,205 L94,199 L93,193 L93,187 L94,181 L96,175 L99,169 L103,164 L107,159 L111,155 L115,151 L119,147 L122,142 L124,137 L125,131 L124,125 L122,119 L119,113 L116,107 L114,101 L113,95 L113,89 L115,83 L118,78 L122,73 L127,69 L132,65 L137,62 L142,59 L147,57 L152,55 L157,52 L162,49 L165,44 L167,39 L168,34 Z";
+
+function buildMap(){
+  const svg=document.getElementById("ukmap");
+  svg.innerHTML=`
+    <defs>
+      <filter id="glow-f"><feGaussianBlur stdDeviation="2.5" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
+      <filter id="subtle-glow"><feGaussianBlur stdDeviation="1.5" result="b"/><feComposite in="SourceGraphic" in2="b" operator="over"/></filter>
+      <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#1a0f00" stop-opacity=".6"/>
+        <stop offset="100%" stop-color="#0a0500" stop-opacity=".9"/>
+      </radialGradient>
+      <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="6" stroke="#8B6914" stroke-width="0.2" stroke-opacity="0.15"/>
+      </pattern>
+    </defs>
+    <rect x="60" y="20" width="220" height="380" fill="url(#bg-grad)"/>
+    <rect x="60" y="20" width="220" height="380" fill="url(#hatch)"/>
+    <path d="${UK_OUTLINE}" fill="#2a1800" fill-opacity=".6" stroke="#8B6914" stroke-width="1" stroke-opacity=".5"/>
+    <path d="${UK_OUTLINE}" fill="none" stroke="#C8A060" stroke-width=".4" stroke-opacity=".25"/>
+    <g id="pins-layer"></g>
+    <g transform="translate(240,330)">
+      <circle r="24" fill="none" stroke="#8B6914" stroke-width="1" stroke-opacity=".5"/>
+      <circle r="17" fill="none" stroke="#8B6914" stroke-width=".6" stroke-opacity=".3"/>
+      <line x1="0" y1="-10" x2="0" y2="-22" stroke="#8B6914" stroke-width="1.2" stroke-opacity=".6"/>
+      <line x1="0" y1="10" x2="0" y2="22" stroke="#8B6914" stroke-width="1.2" stroke-opacity=".6"/>
+      <line x1="-10" y1="0" x2="-22" y2="0" stroke="#8B6914" stroke-width="1.2" stroke-opacity=".6"/>
+      <line x1="10" y1="0" x2="22" y2="0" stroke="#8B6914" stroke-width="1.2" stroke-opacity=".6"/>
+      <polygon points="0,-18 2,-8 0,-13 -2,-8" fill="#8B1A1A" fill-opacity=".85"/>
+      <polygon points="0,18 2,8 0,13 -2,8" fill="#8B6914" fill-opacity=".65"/>
+      <circle r="3" fill="#8B6914" stroke="#5c4410" stroke-width=".8"/>
+      <text y="-27" text-anchor="middle" font-size="7" fill="#5c3a10" font-family="'Cinzel',serif" font-weight="600">N</text>
+    </g>
+    <g transform="translate(75,360)">
+      <circle r="12" fill="#8B1A1A" fill-opacity=".8"/>
+      <circle r="9" fill="none" stroke="#E8D4A0" stroke-width=".6" stroke-opacity=".4"/>
+      <text text-anchor="middle" y="3" font-size="5.5" fill="#E8D4A0" font-family="'Cinzel',serif" font-weight="600" letter-spacing="0.5">SS</text>
+    </g>
+  `;
+  renderPins();
+}
+
+function renderPins(){
+  const layer=document.getElementById("pins-layer");
+  if(!layer)return;
+  const visible=activeFilters.length===0?PINS:PINS.filter(p=>activeFilters.includes(p.type));
+  layer.innerHTML=visible.map(p=>{
+    const col=typeColor(p.type);
+    const isSel=selectedPin?.id===p.id;
+    return `<g onclick="selectPin(${p.id})" style="cursor:pointer" filter="${isSel?'url(#glow-f)':'url(#subtle-glow)'}">
+      ${isSel?`<circle cx="${p.x}" cy="${p.y}" r="14" fill="${col}" fill-opacity=".15"/>`:``}
+      <circle cx="${p.x}" cy="${p.y}" r="${isSel?7:5}" fill="${col}" fill-opacity="${isSel?1:.85}" stroke="#E8D4A0" stroke-width="${isSel?1:.5}" stroke-opacity=".6"/>
+      <g transform="translate(${p.x-6},${p.y-6})">${makeSym(p.type,12)}</g>
+      ${isSel?`<line x1="${p.x}" y1="${p.y+8}" x2="${p.x}" y2="${p.y+16}" stroke="${col}" stroke-width=".8" stroke-opacity=".5"/>`:``}
+    </g>`;
+  }).join("");
+}
+
+function selectPin(id){
+  selectedPin = selectedPin?.id===id ? null : PINS.find(p=>p.id===id);
+  renderPins();
+  const card=document.getElementById("pin-card");
+  if(selectedPin){
+    const col=typeColor(selectedPin.type);
+    card.style.display="flex";
+    card.style.gap="12px";
+    card.style.alignItems="center";
+    card.innerHTML=`
+      <div style="width:3px;height:32px;background:${col};border-radius:1px"></div>
+      <div style="flex:1">
+        <p style="font-size:12px;color:#E8D4A0;font-weight:bold">${selectedPin.name}</p>
+        <p style="font-size:10px;color:#8B6914;letter-spacing:.08em;margin-top:2px;font-family:'Cinzel',serif">
+          ${selectedPin.type.replace("_"," ").toUpperCase()} · ${selectedPin.city}
+        </p>
+      </div>
+      ${makeSym(selectedPin.type,22)}
+      <button onclick="selectPin(${selectedPin.id})" style="background:none;border:none;color:#8B6914;cursor:pointer;font-size:14px;padding:4px;font-family:'Cinzel',serif">✕</button>
+    `;
+  } else {
+    card.style.display="none";
+  }
+}
+
+function buildRegions(){
+  const el=document.getElementById("region-list");
+  el.innerHTML=REGIONS.map(r=>`
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:5px 4px;border-bottom:1px solid #2a1500">
+      <div style="display:flex;align-items:center;gap:6px">
+        <div style="width:8px;height:8px;border-radius:1px;background:${typeColor(r.dominant)}"></div>
+        <span style="font-size:10px;color:#C8A060;font-family:'Cinzel',serif">${r.name}</span>
+      </div>
+      <span style="font-size:10px;color:#8B6914">${r.records}</span>
+    </div>`).join("");
+}
+
+function buildBestiary(){
+  const el=document.getElementById("bestiary");
+  el.innerHTML=TYPES.filter(t=>t.id!=="unknown").map(t=>`
+    <div style="display:flex;gap:8px;align-items:center">
+      ${makeSym(t.id,18)}
+      <div>
+        <p style="font-size:10px;color:#C8A060;font-family:'Cinzel',serif">${t.desc}</p>
+        <div style="width:${Math.min(36,t.count/30)}px;height:2px;background:${t.color};border-radius:1px;margin-top:2px;min-width:6px"></div>
+      </div>
+      <span style="font-size:10px;color:#5c3a10;margin-left:auto">${t.count.toLocaleString()}</span>
+    </div>`).join("");
+}
+
+function buildFooter(){
+  const el=document.getElementById("footer-stats");
+  [
+    {label:"Total catalogued", value:"23,690", col:"#E8D4A0"},
+    {label:"Confirmed conversions", value:"2,590",  col:"#C8A060"},
+    {label:"Mosque conversions",    value:"32",    col:"#8B1A1A"},
+    {label:"Pub conversions",       value:"94",    col:"#8B3500"},
+    {label:"Residential",           value:"1,498", col:"#1a4a6b"},
+  ].forEach(s=>{
+    const d=document.createElement("div");
+    d.innerHTML=`<p style="font-size:9px;color:#3a2000;letter-spacing:.1em;font-family:'Cinzel',serif">${s.label.toUpperCase()}</p><p style="font-size:15px;color:${s.col};font-weight:bold;font-family:'Cinzel',serif;margin-top:1px">${s.value}</p>`;
+    el.appendChild(d);
+  });
+}
+
+buildStats();
+buildFilters();
+buildMap();
+buildRegions();
+buildBestiary();
+buildFooter();
+</script>

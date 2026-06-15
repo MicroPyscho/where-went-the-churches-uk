@@ -1,0 +1,179 @@
+
+<h2 class="sr-only">UK church conversion dataset — statistical insight dashboard</h2>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.5rem">
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 4px">Listed churches (NHLE)</p>
+    <p style="font-size:24px;font-weight:500;margin:0">48,151</p>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 4px">Pipeline records (deduped)</p>
+    <p style="font-size:24px;font-weight:500;margin:0">2,496</p>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 4px">With coordinates</p>
+    <p style="font-size:24px;font-weight:500;margin:0">100%</p>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 4px">Confirmed conversions</p>
+    <p style="font-size:24px;font-weight:500;margin:0">738</p>
+  </div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;font-size:12px;color:var(--color-text-secondary)">
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#888780"></span>Unknown</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#1D9E75"></span>Community</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#D85A30"></span>Hospitality</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#378ADD"></span>Residential</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#7F77DD"></span>Commercial</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#D4537E"></span>Arts</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#BA7517"></span>Other faith</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#E24B4A"></span>Mosque</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#639922"></span>Education</span>
+</div>
+
+<div style="position:relative;width:100%;height:280px;margin-bottom:1.5rem">
+  <canvas id="typeChart" role="img" aria-label="Bar chart of conversion types. Unknown 70%, Community 14.5%, Hospitality 2.8%, Residential 2.8%, Commercial 2.6%, Arts 2%, Other faith 1.7%, Mosque 1.6%, Education 1.5%">Unknown: 1758, Community: 361, Hospitality: 71, Residential: 70, Commercial: 66, Arts: 50, Other faith: 43, Mosque: 40, Education: 37.</canvas>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem">
+  <div>
+    <p style="font-size:13px;font-weight:500;margin:0 0 12px">NHLE listing grade (48,151 churches)</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;font-size:12px;color:var(--color-text-secondary)">
+      <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#534AB7"></span>Grade II</span>
+      <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#1D9E75"></span>Grade II*</span>
+      <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#D85A30"></span>Grade I</span>
+    </div>
+    <div style="position:relative;width:100%;height:200px">
+      <canvas id="gradeChart" role="img" aria-label="Pie chart showing grade breakdown: Grade II 76%, Grade II* 13%, Grade I 11%">Grade II: 36,727 (76%). Grade II*: 6,218 (13%). Grade I: 5,206 (11%).</canvas>
+    </div>
+  </div>
+  <div>
+    <p style="font-size:13px;font-weight:500;margin:0 0 12px">Geographic centre of mass</p>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem;margin-bottom:8px">
+      <p style="font-size:12px;color:var(--color-text-secondary);margin:0 0 2px">Mean centre (NHLE churches)</p>
+      <p style="font-size:15px;font-weight:500;margin:0">52.09°N, 1.57°W</p>
+      <p style="font-size:12px;color:var(--color-text-secondary);margin:4px 0 0">Near Warwick — central England</p>
+    </div>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem;margin-bottom:8px">
+      <p style="font-size:12px;color:var(--color-text-secondary);margin:0 0 2px">Median centre</p>
+      <p style="font-size:15px;font-weight:500;margin:0">51.88°N, 1.65°W</p>
+      <p style="font-size:12px;color:var(--color-text-secondary);margin:4px 0 0">Near Chipping Norton, Oxfordshire</p>
+    </div>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem">
+      <p style="font-size:12px;color:var(--color-text-secondary);margin:0 0 2px">Spread (std deviation)</p>
+      <p style="font-size:15px;font-weight:500;margin:0">±1.16° lat, ±1.49° lon</p>
+      <p style="font-size:12px;color:var(--color-text-secondary);margin:4px 0 0">~129km N-S, ~98km E-W radius</p>
+    </div>
+  </div>
+</div>
+
+<p style="font-size:13px;font-weight:500;margin:0 0 12px">Conversion detected from NHLE name keywords (1,133 buildings)</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;font-size:12px;color:var(--color-text-secondary)">
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#639922"></span>School</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#D85A30"></span>Pub</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#7F77DD"></span>Shop</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#D4537E"></span>Hotel</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#378ADD"></span>Office</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#1D9E75"></span>Library</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#BA7517"></span>Museum</span>
+  <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#E24B4A"></span>Mosque+Gurdwara</span>
+</div>
+<div style="position:relative;width:100%;height:220px;margin-bottom:1.5rem">
+  <canvas id="nhleConvChart" role="img" aria-label="Bar chart of NHLE name-detected conversions. School 814, Pub 70, Shop 69, Hotel 44, Office 44, Library 25, Museum 24, Community 16, Residential 6, Restaurant 5, Theatre 4, Cinema 3, Mosque 2, Gurdwara 1">School: 814, Pub: 70, Shop: 69, Hotel: 44, Office: 44, Library: 25, Museum: 24.</canvas>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.5rem">
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 4px">Mosque conversions found</p>
+    <p style="font-size:24px;font-weight:500;margin:0">40</p>
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:4px 0 0">1.6% of typed records</p>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 4px">Pub/bar conversions</p>
+    <p style="font-size:24px;font-weight:500;margin:0">71</p>
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:4px 0 0">1.8× more than mosques</p>
+  </div>
+  <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 4px">Residential conversions</p>
+    <p style="font-size:24px;font-weight:500;margin:0">70</p>
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:4px 0 0">Largest single typed group</p>
+  </div>
+</div>
+
+<div style="border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:1rem;margin-bottom:1rem">
+  <p style="font-size:13px;font-weight:500;margin:0 0 8px">Notable anomalies</p>
+  <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--color-text-secondary)">
+    <p style="margin:0"><span style="font-weight:500;color:var(--color-text-primary)">Community (14.5%)</span> — the largest confirmed category by far, dwarfing mosque, pub, and residential. Churches become community centres far more often than the headlines suggest.</p>
+    <p style="margin:0"><span style="font-weight:500;color:var(--color-text-primary)">70.4% unknown</span> — OSM records the building as a former church but no current use is tagged. These are your biggest data enrichment opportunity via planning portal cross-referencing.</p>
+    <p style="margin:0"><span style="font-weight:500;color:var(--color-text-primary)">814 schools in NHLE names</span> — listed buildings called "church school" or "old school chapel" massively outnumber pub/mosque/residential conversions combined. Historical reuse as schools predates modern conversion patterns.</p>
+    <p style="margin:0"><span style="font-weight:500;color:var(--color-text-primary)">Geographic bias</span> — mean centre near Warwick confirms heavy concentration in the English Midlands and South. Scotland, Wales, and Northern Ireland are underrepresented (OSM coverage varies; no NHLE equivalent).</p>
+    <p style="margin:0"><span style="font-weight:500;color:var(--color-text-primary)">Only 8 conversion years known</span> — temporal analysis is currently almost impossible. Planning portal data will fix this — applications are dated to the day.</p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+const textColor = isDark ? '#B4B2A9' : '#5F5E5A';
+const gridColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
+
+new Chart(document.getElementById('typeChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Unknown','Community','Hospitality','Residential','Commercial','Arts','Other faith','Mosque','Education'],
+    datasets: [{
+      data: [1758,361,71,70,66,50,43,40,37],
+      backgroundColor: ['#888780','#1D9E75','#D85A30','#378ADD','#7F77DD','#D4537E','#BA7517','#E24B4A','#639922'],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.y.toLocaleString()} records` } } },
+    scales: {
+      x: { ticks: { color: textColor, font: { size: 11 }, autoSkip: false, maxRotation: 35 }, grid: { display: false } },
+      y: { ticks: { color: textColor, font: { size: 11 }, callback: v => v.toLocaleString() }, grid: { color: gridColor } }
+    }
+  }
+});
+
+new Chart(document.getElementById('gradeChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Grade II','Grade II*','Grade I'],
+    datasets: [{
+      data: [36727,6218,5206],
+      backgroundColor: ['#534AB7','#1D9E75','#D85A30'],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.toLocaleString()} (${Math.round(ctx.parsed/48151*100)}%)` } }
+    }
+  }
+});
+
+new Chart(document.getElementById('nhleConvChart'), {
+  type: 'bar',
+  data: {
+    labels: ['School','Pub','Shop','Hotel','Office','Library','Museum','Community','Residential','Restaurant','Theatre','Cinema','Mosque','Gurdwara'],
+    datasets: [{
+      data: [814,70,69,44,44,25,24,16,6,5,4,3,2,1],
+      backgroundColor: ['#639922','#D85A30','#7F77DD','#D4537E','#378ADD','#1D9E75','#BA7517','#1D9E75','#378ADD','#D85A30','#D4537E','#7F77DD','#E24B4A','#E24B4A'],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.parsed.y.toLocaleString()} buildings` } } },
+    scales: {
+      x: { ticks: { color: textColor, font: { size: 11 }, autoSkip: false, maxRotation: 40 }, grid: { display: false } },
+      y: { ticks: { color: textColor, font: { size: 11 } }, grid: { color: gridColor } }
+    }
+  }
+});
+</script>

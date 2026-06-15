@@ -1,0 +1,531 @@
+2026-06-14 23:20:48,270 [INFO] extractors.wikidata_extractor — === Running Wikidata query: replaces_church ===
+2026-06-14 23:20:48,270 [INFO] extractors.wikidata_extractor — Running SPARQL query (1112 chars)
+2026-06-14 23:20:52,827 [INFO] extractors.wikidata_extractor —   → 23 results returned
+2026-06-14 23:20:52,830 [INFO] extractors.wikidata_extractor —   Added 23 rows from replaces_church
+2026-06-14 23:20:54,832 [INFO] extractors.wikidata_extractor — === Running Wikidata query: formerly_church ===
+2026-06-14 23:20:54,833 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-14 23:21:10,621 [INFO] extractors.wikidata_extractor —   → 188 results returned
+2026-06-14 23:21:10,629 [INFO] extractors.wikidata_extractor —   Added 188 rows from formerly_church
+2026-06-14 23:21:12,634 [INFO] extractors.wikidata_extractor — === Running Wikidata query: mosques_from_churches ===
+2026-06-14 23:21:12,635 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-14 23:21:16,890 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-14 23:21:28,670 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-14 23:21:52,697 [INFO] extractors.wikidata_extractor —   → 1 results returned
+2026-06-14 23:21:52,700 [INFO] extractors.wikidata_extractor —   Added 1 rows from mosques_from_churches
+2026-06-14 23:21:54,705 [INFO] extractors.wikidata_extractor — === Running Wikidata query: category_converted ===
+2026-06-14 23:21:54,706 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-14 23:22:15,967 [INFO] extractors.wikidata_extractor —   → 0 results returned
+2026-06-14 23:22:15,974 [INFO] extractors.wikidata_extractor —   Added 0 rows from category_converted
+2026-06-14 23:22:17,995 [INFO] extractors.wikidata_extractor — Wikidata: 212 raw → 157 after internal dedup
+2026-06-14 23:22:20,162 [INFO] transforms.pipeline — Combined: 157 total raw records from 1 sources
+2026-06-14 23:22:20,162 [INFO] transforms.pipeline — Cleaning 157 records...
+2026-06-14 23:22:20,170 [WARNING] transforms.pipeline — Nulling 1 coordinates outside UK bounds
+2026-06-14 23:22:20,173 [INFO] transforms.pipeline — Cleaning complete.
+2026-06-14 23:22:20,174 [INFO] transforms.pipeline — Deduplicating 157 records...
+2026-06-14 23:22:21,210 [INFO] transforms.pipeline — Deduplication: 157 → 153 records (4 duplicates removed)
+2026-06-14 23:22:21,213 [INFO] transforms.pipeline — === VALIDATION REPORT ===
+2026-06-14 23:22:21,213 [INFO] transforms.pipeline — Total records:          153
+2026-06-14 23:22:21,213 [INFO] transforms.pipeline — Has coordinates:        151 (99%)
+2026-06-14 23:22:21,213 [INFO] transforms.pipeline — Has year:               8 (5%)
+2026-06-14 23:22:21,213 [INFO] transforms.pipeline — Has region:             0 (0%)
+2026-06-14 23:22:21,213 [INFO] transforms.pipeline — Has nation:             0 (0%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline — Typed (non-unknown):    69 (45%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline — Low confidence (<0.5): 0
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline — 
+Conversion type breakdown:
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline —   unknown                84  (54.9%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline —   residential            25  (16.3%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline —   hospitality            15  (9.8%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline —   arts_culture           12  (7.8%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline —   commercial              7  (4.6%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline —   education               7  (4.6%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline —   other_faith             2  (1.3%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline —   mosque                  1  (0.7%)
+2026-06-14 23:22:21,214 [INFO] transforms.pipeline — 
+Nation breakdown:
+2026-06-14 23:25:49,785 [INFO] extractors.wikidata_extractor — === Running Wikidata query: replaces_church ===
+2026-06-14 23:25:49,786 [INFO] extractors.wikidata_extractor — Running SPARQL query (1112 chars)
+2026-06-14 23:25:58,665 [INFO] extractors.wikidata_extractor —   → 23 results returned
+2026-06-14 23:25:58,668 [INFO] extractors.wikidata_extractor —   Added 23 rows from replaces_church
+2026-06-14 23:26:00,673 [INFO] extractors.wikidata_extractor — === Running Wikidata query: formerly_church ===
+2026-06-14 23:26:00,674 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-14 23:27:04,795 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-14 23:27:28,565 [INFO] extractors.wikidata_extractor —   → 188 results returned
+2026-06-14 23:27:28,571 [INFO] extractors.wikidata_extractor —   Added 188 rows from formerly_church
+2026-06-14 23:27:30,576 [INFO] extractors.wikidata_extractor — === Running Wikidata query: mosques_from_churches ===
+2026-06-14 23:27:30,577 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-14 23:27:36,541 [INFO] extractors.wikidata_extractor —   → 1 results returned
+2026-06-14 23:27:36,549 [INFO] extractors.wikidata_extractor —   Added 1 rows from mosques_from_churches
+2026-06-14 23:27:38,554 [INFO] extractors.wikidata_extractor — === Running Wikidata query: category_converted ===
+2026-06-14 23:27:38,554 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-14 23:28:09,454 [INFO] extractors.wikidata_extractor —   → 0 results returned
+2026-06-14 23:28:09,461 [INFO] extractors.wikidata_extractor —   Added 0 rows from category_converted
+2026-06-14 23:28:11,485 [INFO] extractors.wikidata_extractor — Wikidata: 212 raw → 157 after internal dedup
+2026-06-14 23:28:11,640 [INFO] transforms.pipeline — Combined: 157 total raw records from 1 sources
+2026-06-14 23:28:11,640 [INFO] transforms.pipeline — Cleaning 157 records...
+2026-06-14 23:28:11,647 [WARNING] transforms.pipeline — Nulling 1 coordinates outside UK bounds
+2026-06-14 23:28:11,649 [INFO] transforms.pipeline — Cleaning complete.
+2026-06-14 23:28:11,649 [INFO] transforms.pipeline — Deduplicating 157 records...
+2026-06-14 23:28:12,668 [INFO] transforms.pipeline — Deduplication: 157 → 153 records (4 duplicates removed)
+2026-06-14 23:28:12,671 [INFO] transforms.pipeline — === VALIDATION REPORT ===
+2026-06-14 23:28:12,671 [INFO] transforms.pipeline — Total records:          153
+2026-06-14 23:28:12,671 [INFO] transforms.pipeline — Has coordinates:        151 (99%)
+2026-06-14 23:28:12,671 [INFO] transforms.pipeline — Has year:               8 (5%)
+2026-06-14 23:28:12,671 [INFO] transforms.pipeline — Has region:             0 (0%)
+2026-06-14 23:28:12,671 [INFO] transforms.pipeline — Has nation:             0 (0%)
+2026-06-14 23:28:12,671 [INFO] transforms.pipeline — Typed (non-unknown):    69 (45%)
+2026-06-14 23:28:12,671 [INFO] transforms.pipeline — Low confidence (<0.5): 0
+2026-06-14 23:28:12,671 [INFO] transforms.pipeline — 
+Conversion type breakdown:
+2026-06-14 23:28:12,672 [INFO] transforms.pipeline —   unknown                84  (54.9%)
+2026-06-14 23:28:12,672 [INFO] transforms.pipeline —   residential            25  (16.3%)
+2026-06-14 23:28:12,672 [INFO] transforms.pipeline —   hospitality            15  (9.8%)
+2026-06-14 23:28:12,672 [INFO] transforms.pipeline —   arts_culture           12  (7.8%)
+2026-06-14 23:28:12,672 [INFO] transforms.pipeline —   commercial              7  (4.6%)
+2026-06-14 23:28:12,672 [INFO] transforms.pipeline —   education               7  (4.6%)
+2026-06-14 23:28:12,672 [INFO] transforms.pipeline —   other_faith             2  (1.3%)
+2026-06-14 23:28:12,672 [INFO] transforms.pipeline —   mosque                  1  (0.7%)
+2026-06-14 23:28:12,672 [INFO] transforms.pipeline — 
+Nation breakdown:
+2026-06-14 23:28:12,783 [INFO] transforms.loader — CSV written: data/output/uk_church_conversions_20260614.csv (153 records)
+2026-06-14 23:28:12,784 [INFO] transforms.loader — Public CSV written: data/output/uk_church_conversions_PUBLIC_20260614.csv
+2026-06-14 23:28:12,785 [WARNING] transforms.loader — DATABASE_URL not set in .env — skipping PostgreSQL write. Set it as: postgresql://user:password@host:port/dbname
+2026-06-14 23:28:12,871 [INFO] transforms.loader — Excel: 'All Records' sheet written
+2026-06-14 23:28:12,879 [INFO] transforms.loader — Excel: 'By Conversion Type' sheet written
+2026-06-14 23:28:12,884 [INFO] transforms.loader — Excel: 'By Decade' sheet written
+2026-06-14 23:28:12,887 [INFO] transforms.loader — Excel: 'By Nation' sheet written
+2026-06-14 23:28:12,889 [INFO] transforms.loader — Excel: 'Top 50 Cities' sheet written
+2026-06-14 23:28:12,892 [INFO] transforms.loader — Excel: 'Source Quality' sheet written
+2026-06-14 23:28:12,915 [INFO] transforms.loader — Excel workbook written: data/output/uk_church_conversions_summary_20260614.xlsx
+2026-06-14 23:55:43,908 [INFO] extractors.wikidata_extractor — === Running Wikidata query: replaces_church ===
+2026-06-14 23:55:43,909 [INFO] extractors.wikidata_extractor — Running SPARQL query (1112 chars)
+2026-06-14 23:55:47,298 [INFO] extractors.wikidata_extractor —   → 23 results returned
+2026-06-14 23:55:47,328 [INFO] extractors.wikidata_extractor —   Added 23 rows from replaces_church
+2026-06-14 23:55:49,333 [INFO] extractors.wikidata_extractor — === Running Wikidata query: formerly_church ===
+2026-06-14 23:55:49,334 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-14 23:56:35,264 [INFO] extractors.wikidata_extractor —   → 188 results returned
+2026-06-14 23:56:35,271 [INFO] extractors.wikidata_extractor —   Added 188 rows from formerly_church
+2026-06-14 23:56:37,275 [INFO] extractors.wikidata_extractor — === Running Wikidata query: mosques_from_churches ===
+2026-06-14 23:56:37,275 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-14 23:56:40,788 [INFO] extractors.wikidata_extractor —   → 1 results returned
+2026-06-14 23:56:40,791 [INFO] extractors.wikidata_extractor —   Added 1 rows from mosques_from_churches
+2026-06-14 23:56:42,796 [INFO] extractors.wikidata_extractor — === Running Wikidata query: category_converted ===
+2026-06-14 23:56:42,797 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-14 23:57:13,052 [INFO] extractors.wikidata_extractor —   → 0 results returned
+2026-06-14 23:57:13,056 [INFO] extractors.wikidata_extractor —   Added 0 rows from category_converted
+2026-06-14 23:57:15,087 [INFO] extractors.wikidata_extractor — Wikidata: 212 raw → 157 after internal dedup
+2026-06-14 23:57:15,200 [INFO] transforms.pipeline — Combined: 157 total raw records from 1 sources
+2026-06-14 23:57:15,201 [INFO] transforms.pipeline — Cleaning 157 records...
+2026-06-14 23:57:15,207 [WARNING] transforms.pipeline — Nulling 1 coordinates outside UK bounds
+2026-06-14 23:57:15,209 [INFO] transforms.pipeline — Cleaning complete.
+2026-06-14 23:57:15,210 [INFO] transforms.pipeline — Deduplicating 157 records...
+2026-06-14 23:57:16,239 [INFO] transforms.pipeline — Deduplication: 157 → 153 records (4 duplicates removed)
+2026-06-14 23:57:16,242 [INFO] transforms.pipeline — === VALIDATION REPORT ===
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline — Total records:          153
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline — Has coordinates:        151 (99%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline — Has year:               8 (5%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline — Has region:             0 (0%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline — Has nation:             0 (0%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline — Typed (non-unknown):    69 (45%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline — Low confidence (<0.5): 0
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline — 
+Conversion type breakdown:
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline —   unknown                84  (54.9%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline —   residential            25  (16.3%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline —   hospitality            15  (9.8%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline —   arts_culture           12  (7.8%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline —   commercial              7  (4.6%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline —   education               7  (4.6%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline —   other_faith             2  (1.3%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline —   mosque                  1  (0.7%)
+2026-06-14 23:57:16,243 [INFO] transforms.pipeline — 
+Nation breakdown:
+2026-06-14 23:57:16,350 [INFO] transforms.loader — CSV written: data/output/uk_church_conversions_20260614.csv (153 records)
+2026-06-14 23:57:16,351 [INFO] transforms.loader — Public CSV written: data/output/uk_church_conversions_PUBLIC_20260614.csv
+2026-06-14 23:57:16,351 [WARNING] transforms.loader — DATABASE_URL not set in .env — skipping PostgreSQL write. Set it as: postgresql://user:password@host:port/dbname
+2026-06-14 23:57:16,433 [INFO] transforms.loader — Excel: 'All Records' sheet written
+2026-06-14 23:57:16,441 [INFO] transforms.loader — Excel: 'By Conversion Type' sheet written
+2026-06-14 23:57:16,446 [INFO] transforms.loader — Excel: 'By Decade' sheet written
+2026-06-14 23:57:16,449 [INFO] transforms.loader — Excel: 'By Nation' sheet written
+2026-06-14 23:57:16,451 [INFO] transforms.loader — Excel: 'Top 50 Cities' sheet written
+2026-06-14 23:57:16,454 [INFO] transforms.loader — Excel: 'Source Quality' sheet written
+2026-06-14 23:57:16,486 [INFO] transforms.loader — Excel workbook written: data/output/uk_church_conversions_summary_20260614.xlsx
+2026-06-15 01:10:22,568 [INFO] extractors.wikidata_extractor — === Running Wikidata query: replaces_church ===
+2026-06-15 01:10:22,569 [INFO] extractors.wikidata_extractor — Running SPARQL query (1112 chars)
+2026-06-15 01:10:26,440 [INFO] extractors.wikidata_extractor —   → 23 results returned
+2026-06-15 01:10:26,444 [INFO] extractors.wikidata_extractor —   Added 23 rows from replaces_church
+2026-06-15 01:10:28,447 [INFO] extractors.wikidata_extractor — === Running Wikidata query: formerly_church ===
+2026-06-15 01:10:28,448 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-15 01:11:06,445 [INFO] extractors.wikidata_extractor —   → 188 results returned
+2026-06-15 01:11:06,459 [INFO] extractors.wikidata_extractor —   Added 188 rows from formerly_church
+2026-06-15 01:11:08,464 [INFO] extractors.wikidata_extractor — === Running Wikidata query: mosques_from_churches ===
+2026-06-15 01:11:08,465 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-15 01:11:14,287 [INFO] extractors.wikidata_extractor —   → 1 results returned
+2026-06-15 01:11:14,290 [INFO] extractors.wikidata_extractor —   Added 1 rows from mosques_from_churches
+2026-06-15 01:11:16,295 [INFO] extractors.wikidata_extractor — === Running Wikidata query: category_converted ===
+2026-06-15 01:11:16,296 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 01:12:20,465 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 01:13:07,024 [INFO] extractors.wikidata_extractor —   → 0 results returned
+2026-06-15 01:13:07,028 [INFO] extractors.wikidata_extractor —   Added 0 rows from category_converted
+2026-06-15 01:13:09,055 [INFO] extractors.wikidata_extractor — Wikidata: 212 raw → 157 after internal dedup
+2026-06-15 01:13:09,076 [INFO] extractors.osm_extractor — === OSM query: other_faith ===
+2026-06-15 01:13:49,961 [INFO] extractors.osm_extractor —   → 5783 OSM elements returned
+2026-06-15 01:13:50,020 [INFO] extractors.osm_extractor —   Added 5783 rows from other_faith
+2026-06-15 01:13:55,024 [INFO] extractors.osm_extractor — === OSM query: hospitality ===
+2026-06-15 01:14:11,909 [INFO] extractors.osm_extractor —   → 20 OSM elements returned
+2026-06-15 01:14:11,922 [INFO] extractors.osm_extractor —   Added 20 rows from hospitality
+2026-06-15 01:14:16,927 [INFO] extractors.osm_extractor — === OSM query: residential ===
+2026-06-15 01:14:20,979 [INFO] extractors.osm_extractor —   → 112 OSM elements returned
+2026-06-15 01:14:20,986 [INFO] extractors.osm_extractor —   Added 112 rows from residential
+2026-06-15 01:14:25,991 [INFO] extractors.osm_extractor — === OSM query: mosque_church ===
+2026-06-15 01:14:38,050 [INFO] extractors.osm_extractor —   → 39 OSM elements returned
+2026-06-15 01:14:38,052 [INFO] extractors.osm_extractor —   Added 39 rows from mosque_church
+2026-06-15 01:14:43,057 [INFO] extractors.osm_extractor — === OSM query: arts_community ===
+2026-06-15 01:15:24,404 [INFO] extractors.osm_extractor —   → 155 OSM elements returned
+2026-06-15 01:15:24,410 [INFO] extractors.osm_extractor —   Added 155 rows from arts_community
+2026-06-15 01:15:29,415 [INFO] extractors.osm_extractor — === OSM query: historic_church ===
+2026-06-15 01:21:49,889 [ERROR] extractors.osm_extractor — OSM query historic_church failed: RetryError[<Future at 0x1144f1b70 state=finished raised ReadTimeout>]
+2026-06-15 01:21:49,891 [INFO] extractors.osm_extractor — === OSM query: explicit_tags ===
+2026-06-15 01:22:00,014 [INFO] extractors.osm_extractor —   → 8 OSM elements returned
+2026-06-15 01:22:00,020 [INFO] extractors.osm_extractor —   Added 8 rows from explicit_tags
+2026-06-15 01:22:05,030 [INFO] extractors.osm_extractor — === OSM query: commercial ===
+2026-06-15 01:22:30,248 [INFO] extractors.osm_extractor —   → 61 OSM elements returned
+2026-06-15 01:22:30,252 [INFO] extractors.osm_extractor —   Added 61 rows from commercial
+2026-06-15 01:22:35,305 [INFO] extractors.osm_extractor — OSM: 6178 raw → 5831 after dedup by OSM ID
+2026-06-15 01:22:35,306 [INFO] extractors.osm_extractor — OSM: 5831 after UK bounds filter
+2026-06-15 01:22:35,451 [INFO] transforms.pipeline — Combined: 5988 total raw records from 2 sources
+2026-06-15 01:22:35,451 [INFO] transforms.pipeline — Cleaning 5988 records...
+2026-06-15 01:22:35,494 [WARNING] transforms.pipeline — Nulling 1 coordinates outside UK bounds
+2026-06-15 01:22:35,499 [INFO] transforms.pipeline — Cleaning complete.
+2026-06-15 01:22:35,499 [INFO] transforms.pipeline — Deduplicating 5988 records...
+2026-06-15 01:28:33,694 [INFO] transforms.pipeline — Deduplication: 5988 → 2496 records (3492 duplicates removed)
+2026-06-15 01:28:33,728 [INFO] transforms.pipeline — === VALIDATION REPORT ===
+2026-06-15 01:28:33,728 [INFO] transforms.pipeline — Total records:          2496
+2026-06-15 01:28:33,728 [INFO] transforms.pipeline — Has coordinates:        2494 (100%)
+2026-06-15 01:28:33,728 [INFO] transforms.pipeline — Has year:               8 (0%)
+2026-06-15 01:28:33,728 [INFO] transforms.pipeline — Has region:             0 (0%)
+2026-06-15 01:28:33,729 [INFO] transforms.pipeline — Has nation:             0 (0%)
+2026-06-15 01:28:33,729 [INFO] transforms.pipeline — Typed (non-unknown):    738 (30%)
+2026-06-15 01:28:33,729 [INFO] transforms.pipeline — Low confidence (<0.5): 0
+2026-06-15 01:28:33,729 [INFO] transforms.pipeline — 
+Conversion type breakdown:
+2026-06-15 01:28:33,730 [INFO] transforms.pipeline —   unknown              1758  (70.4%)
+2026-06-15 01:28:33,730 [INFO] transforms.pipeline —   community             361  (14.5%)
+2026-06-15 01:28:33,730 [INFO] transforms.pipeline —   hospitality            71  (2.8%)
+2026-06-15 01:28:33,730 [INFO] transforms.pipeline —   residential            70  (2.8%)
+2026-06-15 01:28:33,730 [INFO] transforms.pipeline —   commercial             66  (2.6%)
+2026-06-15 01:28:33,730 [INFO] transforms.pipeline —   arts_culture           50  (2.0%)
+2026-06-15 01:28:33,731 [INFO] transforms.pipeline —   other_faith            43  (1.7%)
+2026-06-15 01:28:33,731 [INFO] transforms.pipeline —   mosque                 40  (1.6%)
+2026-06-15 01:28:33,731 [INFO] transforms.pipeline —   education              37  (1.5%)
+2026-06-15 01:28:33,731 [INFO] transforms.pipeline — 
+Nation breakdown:
+2026-06-15 01:28:33,854 [INFO] transforms.loader — CSV written: data/output/uk_church_conversions_20260615.csv (2496 records)
+2026-06-15 01:28:33,863 [INFO] transforms.loader — Public CSV written: data/output/uk_church_conversions_PUBLIC_20260615.csv
+2026-06-15 01:28:33,863 [WARNING] transforms.loader — DATABASE_URL not set in .env — skipping PostgreSQL write. Set it as: postgresql://user:password@host:port/dbname
+2026-06-15 01:28:34,110 [INFO] transforms.loader — Excel: 'All Records' sheet written
+2026-06-15 01:28:34,121 [INFO] transforms.loader — Excel: 'By Conversion Type' sheet written
+2026-06-15 01:28:34,126 [INFO] transforms.loader — Excel: 'By Decade' sheet written
+2026-06-15 01:28:34,129 [INFO] transforms.loader — Excel: 'By Nation' sheet written
+2026-06-15 01:28:34,131 [INFO] transforms.loader — Excel: 'Top 50 Cities' sheet written
+2026-06-15 01:28:34,134 [INFO] transforms.loader — Excel: 'Source Quality' sheet written
+2026-06-15 01:28:34,383 [INFO] transforms.loader — Excel workbook written: data/output/uk_church_conversions_summary_20260615.xlsx
+2026-06-15 02:19:57,793 [INFO] extractors.wikidata_extractor — === Running Wikidata query: replaces_church ===
+2026-06-15 02:19:57,793 [INFO] extractors.wikidata_extractor — Running SPARQL query (1112 chars)
+2026-06-15 02:20:02,059 [INFO] extractors.wikidata_extractor —   → 23 results returned
+2026-06-15 02:20:02,065 [INFO] extractors.wikidata_extractor —   Added 23 rows from replaces_church
+2026-06-15 02:20:04,070 [INFO] extractors.wikidata_extractor — === Running Wikidata query: formerly_church ===
+2026-06-15 02:20:04,070 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-15 02:20:48,861 [INFO] extractors.wikidata_extractor —   → 188 results returned
+2026-06-15 02:20:48,872 [INFO] extractors.wikidata_extractor —   Added 188 rows from formerly_church
+2026-06-15 02:20:50,877 [INFO] extractors.wikidata_extractor — === Running Wikidata query: mosques_from_churches ===
+2026-06-15 02:20:50,878 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-15 02:21:14,459 [INFO] extractors.wikidata_extractor —   → 1 results returned
+2026-06-15 02:21:14,464 [INFO] extractors.wikidata_extractor —   Added 1 rows from mosques_from_churches
+2026-06-15 02:21:16,470 [INFO] extractors.wikidata_extractor — === Running Wikidata query: category_converted ===
+2026-06-15 02:21:16,470 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 02:22:20,600 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 02:23:24,730 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 02:24:24,834 [ERROR] extractors.wikidata_extractor — Query category_converted failed: RetryError[<Future at 0x10701a690 state=finished raised ReadTimeout>]
+2026-06-15 02:24:24,855 [INFO] extractors.wikidata_extractor — Wikidata: 212 raw → 157 after internal dedup
+2026-06-15 02:24:24,874 [INFO] extractors.osm_extractor — === OSM query: other_faith ===
+2026-06-15 02:24:55,156 [INFO] extractors.osm_extractor —   → 5783 OSM elements returned
+2026-06-15 02:24:55,211 [INFO] extractors.osm_extractor —   Added 5783 rows from other_faith
+2026-06-15 02:25:00,216 [INFO] extractors.osm_extractor — === OSM query: hospitality ===
+2026-06-15 02:25:18,914 [INFO] extractors.osm_extractor —   → 20 OSM elements returned
+2026-06-15 02:25:18,924 [INFO] extractors.osm_extractor —   Added 20 rows from hospitality
+2026-06-15 02:25:23,929 [INFO] extractors.osm_extractor — === OSM query: residential ===
+2026-06-15 02:25:29,291 [INFO] extractors.osm_extractor —   → 112 OSM elements returned
+2026-06-15 02:25:29,296 [INFO] extractors.osm_extractor —   Added 112 rows from residential
+2026-06-15 02:25:34,298 [INFO] extractors.osm_extractor — === OSM query: mosque_church ===
+2026-06-15 02:26:15,104 [INFO] extractors.osm_extractor —   → 39 OSM elements returned
+2026-06-15 02:26:15,110 [INFO] extractors.osm_extractor —   Added 39 rows from mosque_church
+2026-06-15 02:26:20,113 [INFO] extractors.osm_extractor — === OSM query: arts_community ===
+2026-06-15 02:26:33,571 [INFO] extractors.osm_extractor —   → 155 OSM elements returned
+2026-06-15 02:26:33,579 [INFO] extractors.osm_extractor —   Added 155 rows from arts_community
+2026-06-15 02:26:38,586 [INFO] extractors.osm_extractor — === OSM query: historic_church ===
+2026-06-15 02:32:59,049 [ERROR] extractors.osm_extractor — OSM query historic_church failed: RetryError[<Future at 0x126277590 state=finished raised ReadTimeout>]
+2026-06-15 02:32:59,051 [INFO] extractors.osm_extractor — === OSM query: explicit_tags ===
+2026-06-15 02:32:59,566 [INFO] extractors.osm_extractor —   → 8 OSM elements returned
+2026-06-15 02:32:59,568 [INFO] extractors.osm_extractor —   Added 8 rows from explicit_tags
+2026-06-15 02:33:04,569 [INFO] extractors.osm_extractor — === OSM query: commercial ===
+2026-06-15 02:33:09,210 [INFO] extractors.osm_extractor —   → 61 OSM elements returned
+2026-06-15 02:33:09,213 [INFO] extractors.osm_extractor —   Added 61 rows from commercial
+2026-06-15 02:33:14,254 [INFO] extractors.osm_extractor — OSM: 6178 raw → 5831 after dedup by OSM ID
+2026-06-15 02:33:14,255 [INFO] extractors.osm_extractor — OSM: 5831 after UK bounds filter
+2026-06-15 02:33:14,384 [INFO] transforms.pipeline — Combined: 5988 total raw records from 2 sources
+2026-06-15 02:33:14,385 [INFO] transforms.pipeline — Cleaning 5988 records...
+2026-06-15 02:33:14,423 [WARNING] transforms.pipeline — Nulling 1 coordinates outside UK bounds
+2026-06-15 02:33:14,428 [INFO] transforms.pipeline — Cleaning complete.
+2026-06-15 02:33:14,428 [INFO] transforms.pipeline — Deduplicating 5988 records...
+2026-06-15 02:40:10,042 [INFO] transforms.pipeline — Deduplication: 5988 → 2496 records (3492 duplicates removed)
+2026-06-15 02:40:10,070 [INFO] transforms.pipeline — === VALIDATION REPORT ===
+2026-06-15 02:40:10,070 [INFO] transforms.pipeline — Total records:          2496
+2026-06-15 02:40:10,070 [INFO] transforms.pipeline — Has coordinates:        2494 (100%)
+2026-06-15 02:40:10,070 [INFO] transforms.pipeline — Has year:               8 (0%)
+2026-06-15 02:40:10,070 [INFO] transforms.pipeline — Has region:             0 (0%)
+2026-06-15 02:40:10,070 [INFO] transforms.pipeline — Has nation:             0 (0%)
+2026-06-15 02:40:10,070 [INFO] transforms.pipeline — Typed (non-unknown):    738 (30%)
+2026-06-15 02:40:10,070 [INFO] transforms.pipeline — Low confidence (<0.5): 0
+2026-06-15 02:40:10,070 [INFO] transforms.pipeline — 
+Conversion type breakdown:
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline —   unknown              1758  (70.4%)
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline —   community             361  (14.5%)
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline —   hospitality            71  (2.8%)
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline —   residential            70  (2.8%)
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline —   commercial             66  (2.6%)
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline —   arts_culture           50  (2.0%)
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline —   other_faith            43  (1.7%)
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline —   mosque                 40  (1.6%)
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline —   education              37  (1.5%)
+2026-06-15 02:40:10,071 [INFO] transforms.pipeline — 
+Nation breakdown:
+2026-06-15 02:40:10,216 [INFO] transforms.loader — CSV written: data/output/uk_church_conversions_20260615.csv (2496 records)
+2026-06-15 02:40:10,227 [INFO] transforms.loader — Public CSV written: data/output/uk_church_conversions_PUBLIC_20260615.csv
+2026-06-15 02:40:10,227 [WARNING] transforms.loader — DATABASE_URL not set in .env — skipping PostgreSQL write. Set it as: postgresql://user:password@host:port/dbname
+2026-06-15 02:40:10,499 [INFO] transforms.loader — Excel: 'All Records' sheet written
+2026-06-15 02:40:10,508 [INFO] transforms.loader — Excel: 'By Conversion Type' sheet written
+2026-06-15 02:40:10,513 [INFO] transforms.loader — Excel: 'By Decade' sheet written
+2026-06-15 02:40:10,516 [INFO] transforms.loader — Excel: 'By Nation' sheet written
+2026-06-15 02:40:10,519 [INFO] transforms.loader — Excel: 'Top 50 Cities' sheet written
+2026-06-15 02:40:10,522 [INFO] transforms.loader — Excel: 'Source Quality' sheet written
+2026-06-15 02:40:10,799 [INFO] transforms.loader — Excel workbook written: data/output/uk_church_conversions_summary_20260615.xlsx
+2026-06-15 02:56:44,759 [INFO] extractors.wikidata_extractor — === Running Wikidata query: replaces_church ===
+2026-06-15 02:56:44,760 [INFO] extractors.wikidata_extractor — Running SPARQL query (1112 chars)
+2026-06-15 02:56:47,579 [INFO] extractors.wikidata_extractor —   → 23 results returned
+2026-06-15 02:56:47,584 [INFO] extractors.wikidata_extractor —   Added 23 rows from replaces_church
+2026-06-15 02:56:49,588 [INFO] extractors.wikidata_extractor — === Running Wikidata query: formerly_church ===
+2026-06-15 02:56:49,591 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-15 02:57:03,899 [INFO] extractors.wikidata_extractor —   → 188 results returned
+2026-06-15 02:57:03,911 [INFO] extractors.wikidata_extractor —   Added 188 rows from formerly_church
+2026-06-15 02:57:05,917 [INFO] extractors.wikidata_extractor — === Running Wikidata query: mosques_from_churches ===
+2026-06-15 02:57:05,918 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-15 02:57:10,210 [INFO] extractors.wikidata_extractor —   → 1 results returned
+2026-06-15 02:57:10,214 [INFO] extractors.wikidata_extractor —   Added 1 rows from mosques_from_churches
+2026-06-15 02:57:12,215 [INFO] extractors.wikidata_extractor — === Running Wikidata query: category_converted ===
+2026-06-15 02:57:12,215 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 02:58:16,347 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 02:59:20,491 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 03:00:14,642 [INFO] extractors.wikidata_extractor —   → 0 results returned
+2026-06-15 03:00:14,647 [INFO] extractors.wikidata_extractor —   Added 0 rows from category_converted
+2026-06-15 03:00:16,673 [INFO] extractors.wikidata_extractor — Wikidata: 212 raw → 157 after internal dedup
+2026-06-15 03:00:16,695 [INFO] extractors.osm_extractor — === OSM query: other_faith ===
+2026-06-15 03:01:05,117 [ERROR] extractors.osm_extractor — OSM query other_faith failed: RetryError[<Future at 0x110039f50 state=finished raised HTTPError>]
+2026-06-15 03:01:05,119 [INFO] extractors.osm_extractor — === OSM query: hospitality ===
+2026-06-15 03:01:54,897 [INFO] extractors.osm_extractor —   → 20 OSM elements returned
+2026-06-15 03:01:54,900 [INFO] extractors.osm_extractor —   Added 20 rows from hospitality
+2026-06-15 03:01:59,905 [INFO] extractors.osm_extractor — === OSM query: residential ===
+2026-06-15 03:02:05,128 [INFO] extractors.osm_extractor —   → 112 OSM elements returned
+2026-06-15 03:02:05,134 [INFO] extractors.osm_extractor —   Added 112 rows from residential
+2026-06-15 03:02:10,139 [INFO] extractors.osm_extractor — === OSM query: mosque_church ===
+2026-06-15 03:02:57,908 [INFO] extractors.osm_extractor —   → 39 OSM elements returned
+2026-06-15 03:02:57,915 [INFO] extractors.osm_extractor —   Added 39 rows from mosque_church
+2026-06-15 03:03:02,920 [INFO] extractors.osm_extractor — === OSM query: arts_community ===
+2026-06-15 03:03:32,114 [INFO] extractors.osm_extractor —   → 155 OSM elements returned
+2026-06-15 03:03:32,118 [INFO] extractors.osm_extractor —   Added 155 rows from arts_community
+2026-06-15 03:03:37,123 [INFO] extractors.osm_extractor — === OSM query: historic_church ===
+2026-06-15 03:09:57,596 [ERROR] extractors.osm_extractor — OSM query historic_church failed: RetryError[<Future at 0x11001e0a0 state=finished raised ReadTimeout>]
+2026-06-15 03:09:57,599 [INFO] extractors.osm_extractor — === OSM query: explicit_tags ===
+2026-06-15 03:09:58,216 [INFO] extractors.osm_extractor —   → 8 OSM elements returned
+2026-06-15 03:09:58,220 [INFO] extractors.osm_extractor —   Added 8 rows from explicit_tags
+2026-06-15 03:10:03,225 [INFO] extractors.osm_extractor — === OSM query: commercial ===
+2026-06-15 03:10:06,514 [INFO] extractors.osm_extractor —   → 61 OSM elements returned
+2026-06-15 03:10:06,521 [INFO] extractors.osm_extractor —   Added 61 rows from commercial
+2026-06-15 03:10:11,539 [INFO] extractors.osm_extractor — OSM: 395 raw → 393 after dedup by OSM ID
+2026-06-15 03:10:11,541 [INFO] extractors.osm_extractor — OSM: 393 after UK bounds filter
+2026-06-15 03:10:11,557 [WARNING] extractors.historic_england_extractor — Historic England CSV not found at 'data/raw/historic_england_nhle.csv'. Download it from: https://opendata-historicengland.hub.arcgis.com/datasets/historicengland::national-heritage-list-for-england-nhle/explore?layer=0 and save to data/raw/historic_england_nhle.csv
+2026-06-15 03:10:11,660 [INFO] transforms.pipeline — Combined: 550 total raw records from 2 sources
+2026-06-15 03:10:11,660 [INFO] transforms.pipeline — Cleaning 550 records...
+2026-06-15 03:10:11,670 [WARNING] transforms.pipeline — Nulling 1 coordinates outside UK bounds
+2026-06-15 03:10:11,672 [INFO] transforms.pipeline — Cleaning complete.
+2026-06-15 03:10:11,681 [INFO] transforms.pipeline — Deduplicating 550 records...
+2026-06-15 03:10:22,016 [INFO] transforms.pipeline — Deduplication: 550 → 465 records (85 duplicates removed)
+2026-06-15 03:10:22,021 [INFO] transforms.pipeline — === VALIDATION REPORT ===
+2026-06-15 03:10:22,021 [INFO] transforms.pipeline — Total records:          465
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline — Has coordinates:        463 (100%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline — Has year:               8 (2%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline — Has region:             0 (0%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline — Has nation:             0 (0%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline — Typed (non-unknown):    338 (73%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline — Low confidence (<0.5): 0
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline — 
+Conversion type breakdown:
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline —   unknown               127  (27.3%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline —   community             108  (23.2%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline —   commercial             64  (13.8%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline —   arts_culture           44  (9.5%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline —   mosque                 38  (8.2%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline —   hospitality            35  (7.5%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline —   residential            31  (6.7%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline —   education              16  (3.4%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline —   other_faith             2  (0.4%)
+2026-06-15 03:10:22,022 [INFO] transforms.pipeline — 
+Nation breakdown:
+2026-06-15 03:10:22,129 [INFO] transforms.loader — CSV written: data/output/uk_church_conversions_20260615.csv (465 records)
+2026-06-15 03:10:22,132 [INFO] transforms.loader — Public CSV written: data/output/uk_church_conversions_PUBLIC_20260615.csv
+2026-06-15 03:10:22,132 [WARNING] transforms.loader — DATABASE_URL not set in .env — skipping PostgreSQL write. Set it as: postgresql://user:password@host:port/dbname
+2026-06-15 03:10:22,223 [INFO] transforms.loader — Excel: 'All Records' sheet written
+2026-06-15 03:10:22,232 [INFO] transforms.loader — Excel: 'By Conversion Type' sheet written
+2026-06-15 03:10:22,237 [INFO] transforms.loader — Excel: 'By Decade' sheet written
+2026-06-15 03:10:22,240 [INFO] transforms.loader — Excel: 'By Nation' sheet written
+2026-06-15 03:10:22,242 [INFO] transforms.loader — Excel: 'Top 50 Cities' sheet written
+2026-06-15 03:10:22,245 [INFO] transforms.loader — Excel: 'Source Quality' sheet written
+2026-06-15 03:10:22,327 [INFO] transforms.loader — Excel workbook written: data/output/uk_church_conversions_summary_20260615.xlsx
+2026-06-15 03:27:52,942 [INFO] extractors.wikidata_extractor — === Running Wikidata query: replaces_church ===
+2026-06-15 03:27:52,942 [INFO] extractors.wikidata_extractor — Running SPARQL query (1112 chars)
+2026-06-15 03:27:59,845 [INFO] extractors.wikidata_extractor —   → 23 results returned
+2026-06-15 03:27:59,850 [INFO] extractors.wikidata_extractor —   Added 23 rows from replaces_church
+2026-06-15 03:28:01,855 [INFO] extractors.wikidata_extractor — === Running Wikidata query: formerly_church ===
+2026-06-15 03:28:01,856 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-15 03:29:05,980 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-15 03:30:10,102 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-15 03:30:10,285 [INFO] extractors.wikidata_extractor —   → 188 results returned
+2026-06-15 03:30:10,293 [INFO] extractors.wikidata_extractor —   Added 188 rows from formerly_church
+2026-06-15 03:30:12,298 [INFO] extractors.wikidata_extractor — === Running Wikidata query: mosques_from_churches ===
+2026-06-15 03:30:12,299 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-15 03:30:25,045 [INFO] extractors.wikidata_extractor —   → 1 results returned
+2026-06-15 03:30:25,050 [INFO] extractors.wikidata_extractor —   Added 1 rows from mosques_from_churches
+2026-06-15 03:30:27,055 [INFO] extractors.wikidata_extractor — === Running Wikidata query: category_converted ===
+2026-06-15 03:30:27,055 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 03:31:18,295 [INFO] extractors.wikidata_extractor —   → 0 results returned
+2026-06-15 03:31:18,298 [INFO] extractors.wikidata_extractor —   Added 0 rows from category_converted
+2026-06-15 03:31:20,330 [INFO] extractors.wikidata_extractor — Wikidata: 212 raw → 157 after internal dedup
+2026-06-15 03:31:20,351 [INFO] extractors.osm_extractor — === OSM query: other_faith ===
+2026-06-15 03:31:50,922 [INFO] extractors.osm_extractor —   → 5783 OSM elements returned
+2026-06-15 03:31:50,978 [INFO] extractors.osm_extractor —   Added 5783 rows from other_faith
+2026-06-15 03:31:55,983 [INFO] extractors.osm_extractor — === OSM query: hospitality ===
+2026-06-15 03:32:18,506 [INFO] extractors.osm_extractor —   → 20 OSM elements returned
+2026-06-15 03:32:18,518 [INFO] extractors.osm_extractor —   Added 20 rows from hospitality
+2026-06-15 03:32:23,523 [INFO] extractors.osm_extractor — === OSM query: residential ===
+2026-06-15 03:32:55,475 [INFO] extractors.osm_extractor —   → 112 OSM elements returned
+2026-06-15 03:32:55,480 [INFO] extractors.osm_extractor —   Added 112 rows from residential
+2026-06-15 03:33:00,486 [INFO] extractors.osm_extractor — === OSM query: mosque_church ===
+2026-06-15 03:33:28,139 [INFO] extractors.osm_extractor —   → 39 OSM elements returned
+2026-06-15 03:33:28,144 [INFO] extractors.osm_extractor —   Added 39 rows from mosque_church
+2026-06-15 03:33:33,149 [INFO] extractors.osm_extractor — === OSM query: arts_community ===
+2026-06-15 03:34:19,589 [INFO] extractors.osm_extractor —   → 155 OSM elements returned
+2026-06-15 03:34:19,604 [INFO] extractors.osm_extractor —   Added 155 rows from arts_community
+2026-06-15 03:34:24,614 [INFO] extractors.osm_extractor — === OSM query: historic_church ===
+2026-06-15 03:43:00,538 [ERROR] extractors.osm_extractor — OSM query historic_church failed: RetryError[<Future at 0x106fce450 state=finished raised ReadTimeout>]
+2026-06-15 03:43:00,554 [INFO] extractors.osm_extractor — === OSM query: explicit_tags ===
+2026-06-15 03:43:00,989 [INFO] extractors.osm_extractor —   → 8 OSM elements returned
+2026-06-15 03:43:00,992 [INFO] extractors.osm_extractor —   Added 8 rows from explicit_tags
+2026-06-15 03:43:05,997 [INFO] extractors.osm_extractor — === OSM query: commercial ===
+2026-06-15 03:43:10,183 [INFO] extractors.osm_extractor —   → 61 OSM elements returned
+2026-06-15 03:43:10,186 [INFO] extractors.osm_extractor —   Added 61 rows from commercial
+2026-06-15 03:43:15,233 [INFO] extractors.osm_extractor — OSM: 6178 raw → 5831 after dedup by OSM ID
+2026-06-15 03:43:15,235 [INFO] extractors.osm_extractor — OSM: 5831 after UK bounds filter
+2026-06-15 03:43:15,287 [INFO] extractors.historic_england_extractor — Reading Historic England NHLE CSV from data/raw/historic_england_nhle.csv
+2026-06-15 03:43:16,099 [INFO] extractors.historic_england_extractor — NHLE CSV: 379666 total listed buildings
+2026-06-15 03:43:16,416 [INFO] extractors.historic_england_extractor — NHLE: 48151 entries with church/chapel keywords
+2026-06-15 03:58:03,155 [INFO] extractors.historic_england_extractor — NHLE: 48151 total church entries, 4498 with conversion detected from name
+2026-06-15 03:58:03,512 [INFO] transforms.pipeline — Combined: 54139 total raw records from 3 sources
+2026-06-15 03:58:03,513 [INFO] transforms.pipeline — Cleaning 54139 records...
+2026-06-15 03:58:03,813 [WARNING] transforms.pipeline — Nulling 1 coordinates outside UK bounds
+2026-06-15 03:58:03,844 [INFO] transforms.pipeline — Cleaning complete.
+2026-06-15 03:58:04,702 [INFO] transforms.pipeline — Deduplicating 54139 records...
+2026-06-15 09:56:27,680 [INFO] extractors.wikidata_extractor — === Running Wikidata query: replaces_church ===
+2026-06-15 09:56:27,680 [INFO] extractors.wikidata_extractor — Running SPARQL query (1112 chars)
+2026-06-15 09:56:31,132 [INFO] extractors.wikidata_extractor —   → 23 results returned
+2026-06-15 09:56:31,138 [INFO] extractors.wikidata_extractor —   Added 23 rows from replaces_church
+2026-06-15 09:56:33,142 [INFO] extractors.wikidata_extractor — === Running Wikidata query: formerly_church ===
+2026-06-15 09:56:33,142 [INFO] extractors.wikidata_extractor — Running SPARQL query (976 chars)
+2026-06-15 09:57:28,274 [INFO] extractors.wikidata_extractor —   → 188 results returned
+2026-06-15 09:57:28,285 [INFO] extractors.wikidata_extractor —   Added 188 rows from formerly_church
+2026-06-15 09:57:30,290 [INFO] extractors.wikidata_extractor — === Running Wikidata query: mosques_from_churches ===
+2026-06-15 09:57:30,291 [INFO] extractors.wikidata_extractor — Running SPARQL query (906 chars)
+2026-06-15 09:57:33,344 [INFO] extractors.wikidata_extractor —   → 1 results returned
+2026-06-15 09:57:33,347 [INFO] extractors.wikidata_extractor —   Added 1 rows from mosques_from_churches
+2026-06-15 09:57:35,352 [INFO] extractors.wikidata_extractor — === Running Wikidata query: category_converted ===
+2026-06-15 09:57:35,354 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 09:58:39,485 [INFO] extractors.wikidata_extractor — Running SPARQL query (869 chars)
+2026-06-15 09:59:16,405 [INFO] extractors.wikidata_extractor —   → 0 results returned
+2026-06-15 09:59:16,410 [INFO] extractors.wikidata_extractor —   Added 0 rows from category_converted
+2026-06-15 09:59:18,433 [INFO] extractors.wikidata_extractor — Wikidata: 212 raw → 157 after internal dedup
+2026-06-15 09:59:18,457 [INFO] extractors.osm_extractor — === OSM query: other_faith ===
+2026-06-15 09:59:45,132 [INFO] extractors.osm_extractor —   → 5783 OSM elements returned
+2026-06-15 09:59:45,185 [INFO] extractors.osm_extractor —   Added 5783 rows from other_faith
+2026-06-15 09:59:50,190 [INFO] extractors.osm_extractor — === OSM query: hospitality ===
+2026-06-15 10:00:05,660 [INFO] extractors.osm_extractor —   → 20 OSM elements returned
+2026-06-15 10:00:05,668 [INFO] extractors.osm_extractor —   Added 20 rows from hospitality
+2026-06-15 10:00:10,674 [INFO] extractors.osm_extractor — === OSM query: residential ===
+2026-06-15 10:00:17,639 [INFO] extractors.osm_extractor —   → 112 OSM elements returned
+2026-06-15 10:00:17,646 [INFO] extractors.osm_extractor —   Added 112 rows from residential
+2026-06-15 10:00:22,651 [INFO] extractors.osm_extractor — === OSM query: mosque_church ===
+2026-06-15 10:01:14,986 [INFO] extractors.osm_extractor —   → 39 OSM elements returned
+2026-06-15 10:01:14,991 [INFO] extractors.osm_extractor —   Added 39 rows from mosque_church
+2026-06-15 10:01:19,996 [INFO] extractors.osm_extractor — === OSM query: arts_community ===
+2026-06-15 10:42:45,661 [INFO] extractors.osm_extractor —   → 155 OSM elements returned
+2026-06-15 10:42:45,669 [INFO] extractors.osm_extractor —   Added 155 rows from arts_community
+2026-06-15 10:42:50,675 [INFO] extractors.osm_extractor — === OSM query: historic_church ===
+2026-06-15 10:47:19,673 [ERROR] extractors.osm_extractor — OSM query historic_church failed: RetryError[<Future at 0x10c152450 state=finished raised ReadTimeout>]
+2026-06-15 10:47:19,677 [INFO] extractors.osm_extractor — === OSM query: explicit_tags ===
+2026-06-15 10:47:20,312 [INFO] extractors.osm_extractor —   → 8 OSM elements returned
+2026-06-15 10:47:20,316 [INFO] extractors.osm_extractor —   Added 8 rows from explicit_tags
+2026-06-15 10:47:25,318 [INFO] extractors.osm_extractor — === OSM query: commercial ===
+2026-06-15 10:47:30,677 [INFO] extractors.osm_extractor —   → 61 OSM elements returned
+2026-06-15 10:47:30,680 [INFO] extractors.osm_extractor —   Added 61 rows from commercial
+2026-06-15 10:47:35,727 [INFO] extractors.osm_extractor — OSM: 6178 raw → 5831 after dedup by OSM ID
+2026-06-15 10:47:35,729 [INFO] extractors.osm_extractor — OSM: 5831 after UK bounds filter
+2026-06-15 10:47:35,778 [INFO] extractors.historic_england_extractor — Reading Historic England NHLE CSV from data/raw/historic_england_nhle.csv
+2026-06-15 10:47:36,569 [INFO] extractors.historic_england_extractor — NHLE CSV: 379666 total listed buildings
+2026-06-15 10:47:36,892 [INFO] extractors.historic_england_extractor — NHLE: 48151 entries with church/chapel keywords
+2026-06-15 10:57:25,465 [INFO] extractors.historic_england_extractor — NHLE: 48151 total church entries, 4498 with conversion detected from name
+2026-06-15 10:57:25,833 [INFO] transforms.pipeline — Combined: 54139 total raw records from 3 sources
+2026-06-15 10:57:25,833 [INFO] transforms.pipeline — Cleaning 54139 records...
+2026-06-15 10:57:26,144 [WARNING] transforms.pipeline — Nulling 1 coordinates outside UK bounds
+2026-06-15 10:57:26,174 [INFO] transforms.pipeline — Cleaning complete.
+2026-06-15 10:57:32,810 [INFO] transforms.pipeline — Deduplicating 54139 records...
+2026-06-15 10:57:34,313 [INFO] transforms.pipeline — Deduplication: 54139 → 23690 records (30449 duplicates removed)
+2026-06-15 10:57:34,513 [INFO] transforms.pipeline — === VALIDATION REPORT ===
+2026-06-15 10:57:34,514 [INFO] transforms.pipeline — Total records:          23690
+2026-06-15 10:57:34,514 [INFO] transforms.pipeline — Has coordinates:        23688 (100%)
+2026-06-15 10:57:34,514 [INFO] transforms.pipeline — Has year:               8 (0%)
+2026-06-15 10:57:34,514 [INFO] transforms.pipeline — Has region:             0 (0%)
+2026-06-15 10:57:34,514 [INFO] transforms.pipeline — Has nation:             19845 (84%)
+2026-06-15 10:57:34,514 [INFO] transforms.pipeline — Typed (non-unknown):    2590 (11%)
+2026-06-15 10:57:34,514 [INFO] transforms.pipeline — Low confidence (<0.5): 0
+2026-06-15 10:57:34,514 [INFO] transforms.pipeline — 
+Conversion type breakdown:
+2026-06-15 10:57:34,515 [INFO] transforms.pipeline —   unknown              21100  (89.1%)
+2026-06-15 10:57:34,515 [INFO] transforms.pipeline —   residential          1498  (6.3%)
+2026-06-15 10:57:34,515 [INFO] transforms.pipeline —   education             499  (2.1%)
+2026-06-15 10:57:34,515 [INFO] transforms.pipeline —   community             289  (1.2%)
+2026-06-15 10:57:34,515 [INFO] transforms.pipeline —   hospitality            94  (0.4%)
+2026-06-15 10:57:34,515 [INFO] transforms.pipeline —   commercial             85  (0.4%)
+2026-06-15 10:57:34,516 [INFO] transforms.pipeline —   arts_culture           50  (0.2%)
+2026-06-15 10:57:34,516 [INFO] transforms.pipeline —   other_faith            43  (0.2%)
+2026-06-15 10:57:34,516 [INFO] transforms.pipeline —   mosque                 32  (0.1%)
+2026-06-15 10:57:34,516 [INFO] transforms.pipeline — 
+Nation breakdown:
+2026-06-15 10:57:34,516 [INFO] transforms.pipeline —   England              19845
+2026-06-15 10:57:34,792 [INFO] transforms.loader — CSV written: data/output/uk_church_conversions_20260615.csv (23690 records)
+2026-06-15 10:57:34,870 [INFO] transforms.loader — Public CSV written: data/output/uk_church_conversions_PUBLIC_20260615.csv
+2026-06-15 10:57:34,870 [WARNING] transforms.loader — DATABASE_URL not set in .env — skipping PostgreSQL write. Set it as: postgresql://user:password@host:port/dbname
+2026-06-15 10:57:36,511 [INFO] transforms.loader — Excel: 'All Records' sheet written
+2026-06-15 10:57:36,522 [INFO] transforms.loader — Excel: 'By Conversion Type' sheet written
+2026-06-15 10:57:36,528 [INFO] transforms.loader — Excel: 'By Decade' sheet written
+2026-06-15 10:57:36,539 [INFO] transforms.loader — Excel: 'By Nation' sheet written
+2026-06-15 10:57:36,544 [INFO] transforms.loader — Excel: 'Top 50 Cities' sheet written
+2026-06-15 10:57:36,549 [INFO] transforms.loader — Excel: 'Source Quality' sheet written
+2026-06-15 10:57:39,584 [INFO] transforms.loader — Excel workbook written: data/output/uk_church_conversions_summary_20260615.xlsx

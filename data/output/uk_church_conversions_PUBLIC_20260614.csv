@@ -1,0 +1,154 @@
+id,church_name,former_denomination,city,local_authority,region,nation,latitude,longitude,conversion_type,conversion_subtype,current_name,year_converted,decade,source,confidence_tier
+3aa050071de2,,,Conwy County Borough,,,,53.213254,-3.5095656,unknown,unknown,Bryndeunydd Baptist Chapel,1877.0,1870s,wikidata_replaces_church,high
+dc6675613949,,,Carmarthenshire,,,,51.805146944,-3.905018055,hospitality,pub,Bedol Library,,,wikidata_replaces_church,high
+4a0797a2ab90,,,Bath,,,,51.381388888,-2.358888888,unknown,unknown,Bath Abbey,,,wikidata_replaces_church,high
+692fe6943b1c,,,,,,,,,unknown,unknown,monastère Saint-Denis-et-Saint-Séraphin,1944.0,1940s,wikidata_replaces_church,high
+56281413f440,,,Glasgow City,,,,55.8569,-4.24554,arts_culture,theatre,Tron Theatre,1981.0,1980s,wikidata_replaces_church,high
+1876c880a360,,,Angus,,,,56.701763,-2.6091806,unknown,unknown,"Old Burial-Ground, Kinnaird",,,wikidata_replaces_church,high
+97061cbd90e5,,,Annesley,,,,53.0772,-1.23806,unknown,unknown,"All Saints' Church, Annesley",1874.0,1870s,wikidata_replaces_church,high
+b57a44ef4551,,,Shetland Islands,,,,60.176033,-1.245706,unknown,unknown,Tingwall Kirk,,,wikidata_replaces_church,high
+c4981106705f,,,Presteigne,,,,52.283138,-3.0510031,unknown,unknown,Ackhill Baptist Church,1930.0,1930s,wikidata_replaces_church,high
+61fc290c14e2,,,Argyll And Bute,,,,56.4289,-5.23677,unknown,unknown,"Kilespikeral Old Parish Church, Taynuilt",,,wikidata_replaces_church,high
+f8bcaf570b2a,,,Middlesbrough,,,,54.52277,-1.21378,unknown,unknown,Middlesbrough Cathedral,,,wikidata_replaces_church,high
+0fd99cb1250f,,,London Borough Of Lambeth,,,,51.466715,-0.113629,unknown,unknown,"Our Lady of the Rosary, Brixton",1870.0,1870s,wikidata_replaces_church,high
+95461605cc5a,,,Birmingham,,,,52.463597,-1.872342,unknown,unknown,Christ Church Sparkbrook,2012.0,2010s,wikidata_replaces_church,high
+3ce16626e19e,,,Moray,,,,57.468871,-3.3580256,unknown,unknown,"Knockando Parish Church, Upper Knockando",,,wikidata_replaces_church,high
+e0b7c6e1d93a,,,Rushmoor,,,,51.25043,-0.76542,unknown,unknown,Empire Banqueting Hall,2015.0,2010s,wikidata_replaces_church,high
+2ed4575347c5,,,East Dunbartonshire,,,,55.9392,-4.15528,unknown,unknown,"St Mary's Parish Church, Cowgate, Kirkintilloch",,,wikidata_replaces_church,high
+2a2a792ddf8f,,,Ceredigion,,,,52.417534,-4.0827932,unknown,unknown,St Paul Methodist Centre,,,wikidata_replaces_church,high
+bfeedebbf167,,,Barrowford,,,,53.851,-2.2227,unknown,unknown,"St Thomas's Church, Barrowford",,,wikidata_replaces_church,high
+b4b0281ddf71,,,City Of Westminster,,,,51.4994,-0.127367,unknown,unknown,Westminster Abbey,,,wikidata_formerly_church,high
+f711434bd7c8,,,Manchester,,,,53.4695,-2.20396,unknown,unknown,Anglican Church of St Benedict,,,wikidata_formerly_church,high
+e6aba0e6bc6b,,,Wareham,,,,50.685341,-2.110189,hospitality,nightclub,Wareham Conservative Club,,,wikidata_formerly_church,high
+20deaab8872f,,,Coventry,,,,52.407925,-1.507443,unknown,unknown,"Ruined Cathedral Church of St Michael, Coventry",,,wikidata_formerly_church,high
+1ce0779d089c,,,Oundle,,,,52.48113831,-0.472465858,arts_culture,theatre,Rodolphe Stahl Theatre,,,wikidata_formerly_church,high
+52b8333fe88b,,,Folkestone,,,,51.08051922,1.181215858,hospitality,pub,The Samuel Peto,,,wikidata_formerly_church,high
+5e5e9fa91cb9,,,Wythall,,,,52.371966,-1.894451,unknown,unknown,"St Mary's Church, Wythall",,,wikidata_formerly_church,high
+1775dfceee2b,,,Argyll And Bute,,,,55.444565,-5.6404544,unknown,unknown,"Old Parish Church, Kilmichael",,,wikidata_formerly_church,high
+a39702144a54,,,Over Norton,,,,51.954377977,-1.539520466,residential,residential_general,St James,,,wikidata_formerly_church,high
+e69d343ee2d6,,,Ramsgate,,,,51.333328,1.420299,arts_culture,theatre,King's Theatre,,,wikidata_formerly_church,high
+f13426f88aea,,,Blairgowrie And Rattray,,,,56.5935,-3.34209,unknown,unknown,"Free Church, James Street, Blairgowrie",,,wikidata_formerly_church,high
+09580658621c,,,Pontypridd,,,,51.604316,-3.3412317,unknown,unknown,Muni Arts Centre,,,wikidata_formerly_church,high
+0cebc4df8c8f,,,High Peak,,,,53.441218,-1.950553,unknown,unknown,RE North and Co Limited and attached railings and gate piers,,,wikidata_formerly_church,high
+2629bd502b58,,,Haversham-Cum-Little Linford,,,,52.076693,-0.782105,unknown,unknown,Ruins of Church of St Peter,,,wikidata_formerly_church,high
+6ddee448b9e5,,,Cheshire West And Chester,,,,53.196709,-2.882812,residential,residential_general,"St Barnabas' Church, Chester",,,wikidata_formerly_church,high
+1b3fac6919d7,,,Pembury,,,,51.14408,0.32264,unknown,unknown,St Anselm's Catholic Church,,,wikidata_formerly_church,high
+b026b0a4210a,,,Manorbier,,,,51.655657,-4.810784,unknown,unknown,Jameston Community Hall,,,wikidata_formerly_church,high
+269772dd4d04,,,London Borough Of Lambeth,,,,51.495,-0.1202,arts_culture,museum,Garden Museum,,,wikidata_formerly_church,high
+0746a29e50b7,,,Liverpool,,,,53.428172,-2.958273,hospitality,pub,The Church,,,wikidata_formerly_church,high
+e07527bf957d,,,Longtown,,,,51.955802,-2.988569,residential,residential_general,Church of St Peter,,,wikidata_formerly_church,high
+630356413beb,,,Tunbridge Wells,,,,51.1287,0.2616,commercial,gym,Vale Royal Methodist Church,,,wikidata_formerly_church,high
+57361c1e8789,,,Oxford,,,,51.749406,-1.271317,unknown,unknown,Osney Abbey,,,wikidata_formerly_church,high
+f2dd0335bda8,,,Pentre,,,,51.647513,-3.4874788,unknown,unknown,Hebron Welsh Baptist Chapel,,,wikidata_formerly_church,high
+348305341598,,,Foxhall,,,,52.04682,1.25022,hospitality,nightclub,All Saints Church,,,wikidata_formerly_church,high
+96f4c94e6a5e,,,Tamworth,,,,52.5961,-1.68779,unknown,unknown,Dosthill Sunday School and Parish Room,,,wikidata_formerly_church,high
+8a5e364ca18e,,,Middlesbrough,,,,54.5803,-1.2368,unknown,unknown,Cathedral Church of Our Lady of Perpetual Succour,,,wikidata_formerly_church,high
+2ffc9f3a9259,,,London Borough Of Southwark,,,,51.5019,-0.0783333,unknown,unknown,St John Horsleydown,,,wikidata_formerly_church,high
+268d2ce696b4,,,London Borough Of Ealing,,,,51.506892,-0.265212,arts_culture,theatre,Dominion Cinema,,,wikidata_formerly_church,high
+024acb066b4b,,,Great Budworth,,,,53.2945,-2.5047,residential,residential_general,"Methodist Church, Great Budworth",,,wikidata_formerly_church,high
+1c61b1bd5b49,,,Wirral,,,,53.38953,-3.01124,unknown,unknown,Remains of Church of St Mary,,,wikidata_formerly_church,high
+4fb333dfb900,,,New Leake,,,,53.11344,0.101243,unknown,unknown,"Church of St Paul, Eastville",,,wikidata_formerly_church,high
+899fbf336258,,,Nantwich,,,,53.0671,-2.5193,residential,residential_general,"Congregational Chapel, Nantwich",,,wikidata_formerly_church,high
+0ef618be5591,,,Reading,,,,51.45348,-0.97431,hospitality,pub,BrewDog Reading,,,wikidata_formerly_church,high
+2d0fdc844a2c,,,City Of London,,,,51.5166,-0.0941096,unknown,unknown,"St Alban, Wood Street",,,wikidata_formerly_church,high
+fafd7e393328,,,Sheffield,,,,53.366752,-1.474278,residential,residential_general,St Barnabas House,,,wikidata_formerly_church,high
+82b4fd59570f,,,South Georgia And The South Sandwich Islands,,,,,,unknown,unknown,Norwegian Anglican Church,,,wikidata_formerly_church,high
+a02dfcb8bf2c,,,London Borough Of Croydon,,,,51.386748,-0.110376,unknown,unknown,Oshwal Mahajanwadi,,,wikidata_formerly_church,high
+4c44b8174190,,,Wadsworth,,,,53.763165,-2.005326,residential,residential_general,Crimsworth Methodist Church,,,wikidata_formerly_church,high
+0db283771d3f,,,Bath And North East Somerset,,,,51.380095,-2.357813,arts_culture,theatre,Old Orchard Street Theatre,,,wikidata_formerly_church,high
+9cd89b5c01aa,,,Cold Hanworth,,,,53.335927,-0.446962,residential,residential_general,Old Church House,,,wikidata_formerly_church,high
+51cb1099ba28,,,,,,,51.061,-1.314,unknown,unknown,Old Minster,,,wikidata_formerly_church,high
+4eb6d1eccd1a,,,Leeds,,,,53.80656,-1.551036,hospitality,nightclub,Trinity Congregational Church,,,wikidata_formerly_church,high
+dca83b53e354,,,City Of Edinburgh,,,,55.9523,-3.10845,unknown,unknown,Portobello Old Parish Church,,,wikidata_formerly_church,high
+e14f89c5e099,,,Liverpool,,,,53.42454,-2.95536,mosque,mosque_general,Baitul Lateef Mosque,,,wikidata_formerly_church,high
+9e97adc39a0a,,,Foscott,,,,52.0157,-0.956927,residential,residential_general,St Leonard's,,,wikidata_formerly_church,high
+bb8642b6f684,,,High Peak,,,,53.444501,-1.955156,residential,residential_general,Former Methodist Chapel and Sunday school with attached walls and railings,,,wikidata_formerly_church,high
+a3ef9cc459ed,,,Exeter,,,,50.7224,-3.5313,unknown,unknown,St. Mary Major,,,wikidata_formerly_church,high
+417bdc009f85,,,Bath And North East Somerset,,,,51.376478,-2.358489,unknown,unknown,Widcombe Community Centre,,,wikidata_formerly_church,high
+f71479efd816,,,Oldham,,,,53.537101476,-2.131030619,unknown,unknown,St John's Church,,,wikidata_formerly_church,high
+cf30e8327103,,,Bembridge,,,,50.691768,-1.091254,unknown,unknown,The Old Chapel,,,wikidata_formerly_church,high
+ce3376e62ae8,,,Blackburn With Darwen,,,,53.7447,-2.4868,unknown,unknown,"St Peter's Church, Blackburn",,,wikidata_formerly_church,high
+ea306de2fb11,,,City Of Portsmouth,,,,50.8138552,-1.0801929,hospitality,pub,The Grapes,,,wikidata_formerly_church,high
+3b41fbe250d4,,,Wymondham,,,,52.571,1.11035,unknown,unknown,Becket's Chapel,,,wikidata_formerly_church,high
+99403f51e5c5,,,Didcot,,,,51.605438,-1.236526,unknown,unknown,Northbourne Centre,,,wikidata_formerly_church,high
+d3c517da8975,,,Sinnington,,,,54.2652,-0.856039,residential,residential_general,Barn approximately 10 metres north east of The Hall,,,wikidata_formerly_church,high
+41e3fcd6698b,,,Christchurch,,,,50.7357,-1.767128,unknown,unknown,Bridge Furnishing Factory,,,wikidata_formerly_church,high
+9edbc36acefc,,,Bodmin,,,,50.471079,-4.723442,hospitality,pub,Methodist Chapel,,,wikidata_formerly_church,high
+4cdd358ece5b,,,Romsey Extra,,,,50.959044,-1.488455,arts_culture,arts_centre,Mountbatten Gallery,,,wikidata_formerly_church,high
+c18c2b8f5fd1,,,Rochdale,,,,53.620784,-2.150327,unknown,unknown,E Pitio Plastics,,,wikidata_formerly_church,high
+6559bbdb7d5b,,,Sibton,,,,52.27338447,1.459475546,education,school,Sibton Nursery School,,,wikidata_formerly_church,high
+d4fc98b3b9f4,,,Hellifield,,,,54.002355503,-2.221437692,residential,residential_general,The Old Chapel,,,wikidata_formerly_church,high
+d846328ecb44,,,Bexhill-On-Sea,,,,50.845933,0.4686,hospitality,restaurant,The Chilli Tree,,,wikidata_formerly_church,high
+f546fc212924,,,Stockport,,,,53.38871,-2.05983,unknown,unknown,Remains of Church of All Saints,,,wikidata_formerly_church,high
+37dfd96bcc55,,,Manchester,,,,53.490086,-2.242102,other_faith,jewish_synagogue,Central Synagogue,,,wikidata_formerly_church,high
+ee6f5fffd177,,,Rugby,,,,52.374769,-1.248005,unknown,unknown,Pakistani Community Centre,,,wikidata_formerly_church,high
+f4d727c81583,,,Marlborough,,,,51.420719,-1.728735,arts_culture,theatre,Parade Cinema,,,wikidata_formerly_church,high
+d201b6047d86,,,Netley Marsh,,,,50.909068,-1.554361,unknown,unknown,Bartley Village Hall,,,wikidata_formerly_church,high
+4d9188abe4a4,,,Nayland-With-Wissington,,,,51.9695,0.874466,unknown,unknown,Court Knoll,,,wikidata_formerly_church,high
+f6e9e2342f26,,,Treverbyn,,,,50.368162,-4.806379,residential,residential_general,The Chapel Guest House,,,wikidata_formerly_church,high
+275effb5ce9e,,,Trafford,,,,53.402599,-2.331751,unknown,unknown,Holy Cross Church Hall,,,wikidata_formerly_church,high
+2ab29d482791,,,Cotford St Luke,,,,51.03949818,-3.188179177,hospitality,pub,The Chapel,,,wikidata_formerly_church,high
+6210e7474706,,,Hutton Henry And Station Town,,,,54.719062,-1.343371,unknown,unknown,St Francis Village Hall,,,wikidata_formerly_church,high
+6f3af8c648b2,,,,,,,51.5468,-0.0507,unknown,unknown,Gravel Pit Chapel,,,wikidata_formerly_church,high
+dbe53ab0cb2a,,,Salisbury,,,,51.0689501,-1.7986393,hospitality,pub,The Bridge Tap,,,wikidata_formerly_church,high
+296dab8e7d14,,,Slaugham,,,,51.08306,-0.202962,unknown,unknown,Baron Hall,,,wikidata_formerly_church,high
+6370b827f3c1,,,Reading,,,,51.482665,-0.969648,unknown,unknown,St Barnabas Church Hall,,,wikidata_formerly_church,high
+d8c1f7e6481d,,,City Of Plymouth,,,,50.369762,-4.173755,commercial,shop,"8, George Street",,,wikidata_formerly_church,high
+20604df2bb96,,,Storrington And Sullington,,,,50.920205,-0.474467,unknown,unknown,Cootham Village Hall,,,wikidata_formerly_church,high
+343809c0b944,,,Newcastle-Under-Lyme,,,,53.013345,-2.225218,commercial,office,Ebenezer House,,,wikidata_formerly_church,high
+7aa558cb5f4c,,,Erewash,,,,52.894105,-1.27493,unknown,unknown,"St James' Church, Long Eaton",,,wikidata_formerly_church,high
+9f005ff0a19a,,,Trowbridge,,,,51.32216,-2.21079,unknown,unknown,Conigre Unitarian Church,,,wikidata_formerly_church,high
+084eee86fff1,,,Burton Bradstock,,,,50.703374,-2.725969,hospitality,pub,Burton Bradstock Library,,,wikidata_formerly_church,high
+88edaed1c8d8,,,Hawkwell,,,,51.598771,0.659468,unknown,unknown,Emmanuel Church Hall,,,wikidata_formerly_church,high
+3bb307d11fa1,,,Middleton And Smerrill,,,,53.166538,-1.709086,residential,residential_general,Chapel House,,,wikidata_formerly_church,high
+241bf1065485,,,Chignall,,,,51.7608,0.417732,residential,residential_general,Former Church of St James,,,wikidata_formerly_church,high
+e6fedb7accea,,,Brighton And Hove,,,,50.8266,-0.153018,unknown,unknown,"St Stephen's Church, Brighton",,,wikidata_formerly_church,high
+b5187946d4db,,,London Borough Of Sutton,,,,51.359272,-0.142157,residential,residential_general,Castlemead Court,,,wikidata_formerly_church,high
+bf78bcd81d61,,,Downham,,,,53.89180219,-2.325748565,unknown,unknown,Village Hall,,,wikidata_formerly_church,high
+98c866307c2f,,,Hawes,,,,54.299206,-2.198335,unknown,unknown,Village Institute,,,wikidata_formerly_church,high
+f0bdd8dfb139,,,Exeter,,,,50.73227238,-3.49313118,unknown,unknown,Whipton Community Centre,,,wikidata_formerly_church,high
+4542c7a1d64c,,,Broad Clyst,,,,50.794071,-3.440052,unknown,unknown,Chapel Court,,,wikidata_formerly_church,high
+c0bc85b1e572,,,City Of Nottingham,,,,52.95217454,-1.141592719,education,school,St Mary's School,,,wikidata_formerly_church,high
+90bbd76a1621,,,Caistor,,,,53.49709776,-0.317882892,education,library,Caistor School Library,,,wikidata_formerly_church,high
+ccef633845de,,,Sandleheath,,,,50.931806,-1.817979,unknown,unknown,Sandleheath Village Hall,,,wikidata_formerly_church,high
+8d351365f41b,,,City Of Westminster,,,,51.52905,-0.19869,residential,residential_general,Simon Court,,,wikidata_formerly_church,high
+f9ce660be0a2,,,Barnsley,,,,53.5507,-1.4852,unknown,unknown,Church of St George,,,wikidata_formerly_church,high
+3062ebe29ce1,,,Southend-On-Sea,,,,51.550429,0.730204,unknown,unknown,St Edmund's Community Hall,,,wikidata_formerly_church,high
+24ba9ee070ea,,,Sefton,,,,53.47202,-3.02037,residential,residential_general,Welsh Presbyterian Church,,,wikidata_formerly_church,high
+02ece8d40c4d,,,Portland,,,,50.56106,-2.447714,commercial,shop,Conjurer's Lodge,,,wikidata_formerly_church,high
+effcc7b004f6,,,Stockport,,,,53.40847585,-2.152043084,commercial,office,Chapel Studio,,,wikidata_formerly_church,high
+a2a12d97f760,,,"Bournemouth, Christchurch And Poole",,,,50.733133,-1.97754,education,library,Oakdale Library,,,wikidata_formerly_church,high
+4195a6f675ef,,,Delamere,,,,53.197195,-2.701547,residential,residential_general,Methodist Chapel,,,wikidata_formerly_church,high
+fc1a1e014121,,,Iwerne Minster,,,,50.928503,-2.190961,unknown,unknown,Abingdon Memorial Hall,,,wikidata_formerly_church,high
+4c779e00b89a,,,Wakefield,,,,53.680743,-1.497168,residential,residential_general,Zion United Reformed Church and lodge to north east,,,wikidata_formerly_church,high
+10a0c9583e4d,,,Queen'S Park,,,,51.52878,-0.210308,unknown,unknown,St Jude's Hall,,,wikidata_formerly_church,high
+d323df47b601,,,Oxted,,,,51.243397,0.00282,unknown,unknown,St Agatha's Hall,,,wikidata_formerly_church,high
+6be319a91602,,,Dacorum,,,,51.738045,-0.470116,unknown,unknown,Apsley Community Centre,,,wikidata_formerly_church,high
+423b7d6e5dae,,,Tonbridge And Malling,,,,51.19761,0.27466,unknown,unknown,Corn Exchange,,,wikidata_formerly_church,high
+82bc50ce3787,,,Dunster,,,,51.1832,-3.4459,unknown,unknown,"Priory Church of St George, Dunster",,,wikidata_formerly_church,high
+e6fc9b880626,,,Leeds,,,,53.799247,-1.537738,commercial,office,Templar House,,,wikidata_formerly_church,high
+89dd09dc5913,,,Coventry,,,,52.4107,-1.5108,education,school,"Old Grammar School, Coventry",,,wikidata_formerly_church,high
+307b758c3aea,,,City Of Nottingham,,,,52.958002,-1.151987,other_faith,jewish_synagogue,Shakespeare Street Wesleyan Reform Chapel,,,wikidata_formerly_church,high
+346460e16be8,,,Machynlleth,,,,52.59065,-3.8469711,residential,residential_general,English Methodist Chapel,,,wikidata_formerly_church,high
+46ce7487a9ed,,,Highland,,,,57.89599,-5.16201,arts_culture,museum,Ullapool old parish church,,,wikidata_formerly_church,high
+37ed75647b4a,,,Cheshire West And Chester,,,,53.188534,-2.889379,hospitality,restaurant,Opera Grill,,,wikidata_formerly_church,high
+b1493753ca62,,,Brighton,,,,50.817908,-0.117183,residential,residential_general,Playhouse,,,wikidata_formerly_church,high
+e8b955f6c045,,,Leeds,,,,53.828234,-1.581889,commercial,office,"1A, Moor Road",,,wikidata_formerly_church,high
+c1c5c766a6c7,,,Princethorpe,,,,52.3358,-1.42218,unknown,unknown,"Our Lady of the Angels Church, Princethorpe",,,wikidata_formerly_church,high
+d0f2ed95de5a,,,Hormead,,,,51.949443,0.02164,residential,residential_general,Brew House at Hare Street House,,,wikidata_formerly_church,high
+4fd00ecfd850,,,High Peak,,,,53.446444,-1.938923,residential,residential_general,Premises occupied by Helme Footwear,,,wikidata_formerly_church,high
+9c1c62dc5277,,,,,,,51.5153,-0.118889,unknown,unknown,Sardinian Embassy Chapel,,,wikidata_formerly_church,high
+d85a754efae9,,,Birmingham,,,,52.456957,-1.993013,unknown,unknown,Parish Hall,,,wikidata_formerly_church,high
+d79b80dc389e,,,North Lanarkshire,,,,55.8458,-3.84988,unknown,unknown,Shottskirk,,,wikidata_formerly_church,high
+a01136be6157,,,Bolton,,,,53.5798,-2.4178,arts_culture,theatre,Palace Picture House,,,wikidata_formerly_church,high
+a874254850b7,,,Sheffield,,,,53.38315,-1.46928,unknown,unknown,Sheffield Cathedral,,,wikidata_formerly_church,high
+2a3ebac13c56,,,Ceredigion,,,,52.399767,-4.07049,unknown,unknown,Penparcau Memorial Hall,,,wikidata_formerly_church,high
+3a9cf2c76396,,,Fishguard And Goodwick,,,,51.995511,-4.979188,arts_culture,theatre,Theatr Gwaun,,,wikidata_formerly_church,high
+701959d65daa,,,Painswick,,,,51.786048,-2.192416,unknown,unknown,Ebenezer Chapel,,,wikidata_formerly_church,high
+3c34cc248618,,,Hebden Royd,,,,53.72799,-1.98305,education,school,"Mytholmroyd Methodist Chapel, dwarf wall and railings, and Sunday School",,,wikidata_formerly_church,high
+4a9f72d9d1b9,,,Reigate And Banstead,,,,51.291861,-0.142828,unknown,unknown,Netherne Leisure Centre,,,wikidata_formerly_church,high
+134edbc6fe45,,,Bolton,,,,53.598345433,-2.43130743,arts_culture,theatre,"Methodist Theatre Church, Bolton",,,wikidata_formerly_church,high
+25bd8e07ebf0,,,Thatcham,,,,51.4039,-1.25129,education,school,"Old Bluecoat School, Thatcham",,,wikidata_formerly_church,high
+39a0e494fe91,,,Abersychan,,,,51.746703,-3.0642872,unknown,unknown,Varteg Community Centre,,,wikidata_formerly_church,high
+2967adc06bb6,,,Staveley,,,,53.263567,-1.362198,residential,residential_general,"St Joseph, Staveley",,,wikidata_formerly_church,high
+0d632e362108,,,Pembrokeshire,,,,51.799245,-4.74061,hospitality,pub,Narberth Library,,,wikidata_formerly_church,high
