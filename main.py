@@ -130,7 +130,7 @@ def run(
     start_time = time.time()
 
     # Determine which sources to run
-    all_sources = ["wikidata", "osm", "historic_england", "charity_commission"]
+    all_sources = ["wikidata", "osm", "historic_england", "charity_commission", "oscr_ccni", "planning_portal"]
     run_sources = sources if sources else all_sources
 
     console.print(f"\n[bold]Sources:[/bold] {', '.join(run_sources)}")

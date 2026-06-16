@@ -8,25 +8,52 @@ EXPANDED VERSION — full denomination taxonomy, 80+ subtypes
 # ─── MASTER SCHEMA ──────────────────────────────────────────────────────────
 
 MASTER_COLUMNS = [
-    "id",
-    "church_name",
-    "former_denomination",
-    "address",
-    "city",
-    "local_authority",
-    "region",
-    "nation",
+    # ── Core identity ──────────────────────────────────────────────────────
+    "id",                       # Unique 12-char MD5 hash
+    "church_name",              # Original name of the church
+    "former_denomination",      # CoE, Methodist, Baptist etc.
+    "address",                  # Street address
+    "city",                     # Town or city
+    "local_authority",          # Council / Local Authority District
+    "region",                   # e.g. North West, Yorkshire
+    "nation",                   # England / Wales / Scotland / Northern Ireland
+ 
+    # ── Location ───────────────────────────────────────────────────────────
     "latitude",
     "longitude",
-    "conversion_type",
-    "conversion_subtype",
-    "current_name",
-    "year_converted",
-    "decade",
-    "source",
-    "source_url",
-    "confidence_score",
-    "notes",
+ 
+    # ── Conversion classification ──────────────────────────────────────────
+    "conversion_type",          # Top-level: mosque, residential, hospitality etc.
+    "conversion_subtype",       # Granular: rccg, sunni_deobandi, climbing_wall etc.
+    "current_name",             # What the building is called now
+ 
+    # ── Temporal ───────────────────────────────────────────────────────────
+    "year_converted",           # Year of first conversion from church use
+    "decade",                   # e.g. "1990s"
+    "sale_date",                # Exact sale date from Land Registry (YYYY-MM-DD)
+    "sale_price",               # Sale price in GBP from Land Registry
+ 
+    # ── Use chain (sequential conversions) ─────────────────────────────────
+    "use_history",              # JSON: [{use, year, price, tenure}, ...] oldest first
+ 
+    # ── Buyer / organisation identity ─────────────────────────────────────
+    "buyer_name",               # Buyer name from Land Registry
+    "company_number",           # Companies House number
+    "company_type",             # ltd, charity, plc, llp etc.
+    "sic_code",                 # Industry code (94910 = religious orgs)
+    "incorporated_country",     # Country of incorporation (reveals diaspora orgs)
+ 
+    # ── Regulatory confirmation ────────────────────────────────────────────
+    "ofsted_urn",               # Ofsted URN if school/nursery
+    "cqc_id",                   # CQC location ID if care/health use
+    "inspection_rating",        # Ofsted/CQC rating: Outstanding/Good/RI/Inadequate
+ 
+    # ── Source & quality ───────────────────────────────────────────────────
+    "source",                   # wikidata, osm, historic_england etc.
+    "source_url",               # Direct URL to source record
+    "confidence_score",         # 0.0–1.0 reliability
+    "confidence_tier",          # high / medium / low (derived)
+    "notes",                    # Extra context, methodology notes
 ]
 
 
