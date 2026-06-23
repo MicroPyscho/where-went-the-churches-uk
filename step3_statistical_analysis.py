@@ -38,7 +38,7 @@ logger = logging.getLogger(__name__)
 def find_latest_csv():
     candidates = sorted(glob.glob("data/output/uk_church_conversions_2*.csv"), reverse=True)
     for c in candidates:
-        if "PUBLIC" not in c and "enriched" not in c:
+        if "PUBLIC" not in c and "enriched" not in c and "_pre_" not in c and "_backup" not in c:
             return Path(c)
     return None
 
@@ -405,7 +405,8 @@ def main():
     for ct, label in [("mosque", "Mosque"), ("residential", "Residential")]:
         count = (df["conversion_type"] == ct).sum()
         prop = count / total
-        ci = stats.proportion_confint(count, total, alpha=0.05, method="wilson")
+        from statsmodels.stats.proportion import proportion_confint as _pc
+        ci = _pc(count, total, alpha=0.05, method="wilson")
         print(f"  {label}: {prop:.4f} (95% CI: {ci[0]:.4f}–{ci[1]:.4f})")
 
     # Kruskal-Wallis test on prices

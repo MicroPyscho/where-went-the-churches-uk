@@ -44,7 +44,7 @@ def zebra(ws, start=2):
 
 # ── LOAD DATA ─────────────────────────────────────────────────────────────────
 candidates = sorted(glob.glob("data/output/uk_church_conversions_2*.csv"), reverse=True)
-path = next(f for f in candidates if "PUBLIC" not in f)
+path = next(f for f in candidates if "PUBLIC" not in f and "_pre_" not in f and "_backup" not in f)
 print(f"Loading {path}...")
 df = pd.read_csv(path, low_memory=False)
 df["year_converted"]  = pd.to_numeric(df["year_converted"],  errors="coerce")
@@ -271,7 +271,7 @@ auto_width(ws6)
 
 # ── SHEET 7: MOSQUE RECORDS ───────────────────────────────────────────────────
 print("Sheet 7: Mosque Conversions...")
-ws7 = wb.create_sheet("Mosque Conversions (32)")
+ws7 = wb.create_sheet("Mosque Conversions")
 
 mosque_cols = ["church_name","address","city","region","nation",
                "postcode","latitude","longitude",

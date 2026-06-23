@@ -41,7 +41,7 @@ def download_imd():
 def find_latest_csv():
     candidates = sorted(glob.glob("data/output/uk_church_conversions_2*.csv"), reverse=True)
     for c in candidates:
-        if "PUBLIC" not in c and "enriched" not in c:
+        if "PUBLIC" not in c and "enriched" not in c and "_pre_" not in c and "_backup" not in c:
             return Path(c)
     return None
 
@@ -107,7 +107,16 @@ def main():
             df = df.drop(columns=[col])
 
     # Join
-    df["lsoa_clean"] = df["lsoa"].str.strip()
+    # Convert LSOA names to codes using Census 2021 lookup
+    from pathlib import Path
+    lsoa_lookup_path = Path("data/raw/lsoa_name_to_code.csv")
+    if lsoa_lookup_path.exists():
+        lsoa_lookup = pd.read_csv(lsoa_lookup_path)
+        df = df.merge(lsoa_lookup, left_on="lsoa", right_on="lsoa_name", how="left")
+        df["lsoa_clean"] = df["lsoa_code"].fillna(df["lsoa"]).str.strip()
+        df = df.drop(columns=["lsoa_name", "lsoa_code"], errors="ignore")
+    else:
+        df["lsoa_clean"] = df["lsoa"].str.strip()
     df = df.merge(imd_slim, left_on="lsoa_clean", right_on="lsoa_code", how="left")
     df = df.drop(columns=["lsoa_clean", "lsoa_code"], errors="ignore")
 

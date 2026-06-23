@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 def find_latest_csv():
     candidates = sorted(glob.glob("data/output/uk_church_conversions_2*.csv"), reverse=True)
     for c in candidates:
-        if "PUBLIC" not in c and "enriched" not in c:
+        if "PUBLIC" not in c and "enriched" not in c and "_pre_" not in c and "_backup" not in c:
             return Path(c)
     return None
 
