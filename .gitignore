@@ -27,3 +27,5 @@ pipeline.log
 # Checkpoint files
 enrichment_checkpoint.json
 denomination_checkpoint.json
+non-domestic-csv/
+non-domestic-csv.zip
