@@ -31,3 +31,10 @@ non-domestic-csv/
 non-domestic-csv.zip
 non-domestic-csv/
 non-domestic-csv.zip
+non-domestic-csv/
+non-domestic-csv.zip
+data/raw/
+*.zip
+*.xlsx
+*.xls
+gias_schools.csv
