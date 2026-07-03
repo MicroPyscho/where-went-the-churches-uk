@@ -38,3 +38,29 @@ data/raw/
 *.xlsx
 *.xls
 gias_schools.csv
+
+node_modules
+scripts/.cache
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+# OS
+.DS_Store
+Thumbs.db
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*dashboard/
+navedashboard/
+dashboardround4/node_modules/
+dashboardround4/.svelte-kit/
+dashboardround4/build/
+scripts/.cache/
