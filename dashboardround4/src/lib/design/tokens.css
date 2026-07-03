@@ -1,0 +1,168 @@
+/* ═══════════════════════════════════════════════════════════════════
+   NAVE DESIGN SYSTEM — design tokens
+   Stained-glass palette on an Apple-calm glass-panel structure.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+	--font-display: 'Familjen Grotesk', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+	--font-sans: 'Satoshi', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+	--font-mono: ui-monospace, SFMono-Regular, monospace;
+	--header-h: 64px;
+}
+
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+::selection {
+	background: rgba(238, 132, 52, 0.32);
+	color: #fff;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(140, 146, 165, 0.32);
+	border-radius: 6px;
+}
+
+.tc-root[data-tc-theme='dark'] {
+	--bg: #000000;
+	--bg2: #14213d;
+	--bg3: #1e3057;
+	--bd: rgba(229, 229, 229, 0.13);
+	--bd2: rgba(229, 229, 229, 0.22);
+	--bdg: rgba(238, 132, 52, 0.38);
+	--tx: #ffffff;
+	--txd: #e5e5e5;
+	--txf: #8791a6;
+	--gold: #ee8434;
+	--glass: linear-gradient(157deg, rgba(229, 229, 229, 0.09), rgba(229, 229, 229, 0.025));
+	--glassbd: rgba(255, 255, 255, 0.2);
+	--head: rgba(0, 0, 0, 0.72);
+	--mapbg: #05070f;
+	--shadow: 0 12px 38px rgba(0, 0, 0, 0.6);
+	--tilefx: saturate(1.05) brightness(0.9) contrast(1.07);
+	--sky: radial-gradient(135% 120% at 50% -10%, #14213d 0%, #0a1120 48%, #000000 100%);
+}
+.tc-root[data-tc-theme='light'] {
+	--bg: #efeadd;
+	--bg2: #fbf8f1;
+	--bg3: #ffffff;
+	--bd: rgba(45, 34, 16, 0.12);
+	--bd2: rgba(45, 34, 16, 0.2);
+	--bdg: rgba(194, 90, 31, 0.4);
+	--tx: #211e18;
+	--txd: #5e5849;
+	--txf: #928a77;
+	--gold: #c25a1f;
+	--glass: linear-gradient(157deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.42));
+	--glassbd: rgba(255, 255, 255, 0.72);
+	--head: rgba(245, 241, 232, 0.78);
+	--mapbg: #dde2e6;
+	--shadow: 0 14px 34px rgba(80, 64, 30, 0.15);
+	--tilefx: saturate(1.02);
+	--sky: radial-gradient(135% 120% at 50% -10%, #fbf8f1 0%, #efeadd 50%, #e6dfcd 100%);
+}
+
+@keyframes tcRise {
+	from {
+		opacity: 0;
+		transform: translateY(16px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+/* ── Leaflet integration ── */
+.leaflet-container {
+	background: var(--mapbg) !important;
+	font-family: system-ui, sans-serif;
+	outline: none;
+}
+.tc-root .leaflet-tile-pane {
+	filter: var(--tilefx);
+}
+.leaflet-bar {
+	border: 1px solid var(--bd) !important;
+	box-shadow: var(--shadow) !important;
+	border-radius: 8px !important;
+	overflow: hidden;
+}
+.leaflet-bar a {
+	background: var(--bg2) !important;
+	color: var(--tx) !important;
+	border-bottom: 1px solid var(--bd) !important;
+}
+.leaflet-bar a:hover {
+	background: var(--bg3) !important;
+}
+.leaflet-control-attribution {
+	background: rgba(8, 9, 14, 0.5) !important;
+	color: var(--txf) !important;
+	font-size: 9px !important;
+}
+.leaflet-control-attribution a {
+	color: var(--txd) !important;
+}
+.tc-root[data-tc-theme='light'] .leaflet-control-attribution {
+	background: rgba(255, 255, 255, 0.6) !important;
+}
+.tc-region {
+	transition:
+		fill-opacity 0.25s,
+		stroke-width 0.2s;
+	cursor: pointer;
+}
+.tc-root[data-tc-theme='light'] .tc-poster-map.leaflet-container {
+	background: #e9edf0 !important;
+}
+.tc-root[data-tc-theme='dark'] .tc-poster-map.leaflet-container {
+	background: #0d1017 !important;
+}
+.tc-poster-map .leaflet-interactive:focus,
+.tc-poster-map path:focus,
+.tc-poster-map svg:focus,
+.tc-poster-map svg g:focus {
+	outline: none !important;
+}
+.tc-poster-map {
+	cursor: grab;
+}
+.tc-poster-map:active {
+	cursor: grabbing;
+}
+.tc-root[data-tc-theme='dark'] .tc-poster-map .leaflet-tile-pane {
+	filter: grayscale(1) brightness(1.06) contrast(1.05);
+}
+.tc-root[data-tc-theme='light'] .tc-poster-map .leaflet-tile-pane {
+	filter: grayscale(1) brightness(1.02) contrast(1.12);
+}
+.tc-root[data-tc-theme='dark'] .leaflet-overlay-pane svg {
+	filter: drop-shadow(0 0 5px rgba(238, 132, 52, 0.22));
+}
+.leaflet-tooltip.tc-tip {
+	background: var(--bg2);
+	border: 1px solid var(--bdg);
+	color: var(--tx);
+	font-family: system-ui, sans-serif;
+	font-size: 11.5px;
+	border-radius: 6px;
+	box-shadow: var(--shadow);
+	padding: 6px 10px;
+}
+.leaflet-tooltip.tc-tip::before {
+	display: none;
+}
