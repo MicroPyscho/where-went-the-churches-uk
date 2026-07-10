@@ -1,6 +1,6 @@
 import { browser } from '$app/environment';
 import type { Map as LeafletMap } from 'leaflet';
-import { GEO, regionData, type CityRecord } from '$lib/data/geo';
+import { GEO, regionData, DISTRICT_DATA, type CityRecord } from '$lib/data/geo';
 
 export type ThemeName = 'dark' | 'light';
 export type MapMode = 'category' | 'density';
@@ -77,6 +77,28 @@ class DashboardState {
 	}
 	chooseCity(city: CityRecord) {
 		this.selection = { level: 'city', key: `${city.name}|${city.region}`, data: city };
+		this.searchOpen = false;
+		this.openCountry = null;
+		this.searchQuery = '';
+	}
+	// clicking a district directly on the map (rather than picking a named
+	// city from search) — resolves to the same aggregated district stats
+	// the mosque-ratio card already keys off, so every clicked place responds.
+	chooseDistrict(code: string, name: string, lat: number, lon: number) {
+		const d = DISTRICT_DATA[code];
+		const city: CityRecord = {
+			name: d?.name ?? name,
+			region: d?.region ?? '',
+			nation: d?.nation ?? '',
+			n: d?.n ?? 0,
+			cat: d?.cat ?? 'unknown',
+			mix: d?.mix ?? Array(GEO.cats.length).fill(0),
+			lat,
+			lon,
+			district: d?.name ?? name,
+			districtCode: code
+		};
+		this.selection = { level: 'city', key: `district|${code}`, data: city };
 		this.searchOpen = false;
 		this.openCountry = null;
 		this.searchQuery = '';

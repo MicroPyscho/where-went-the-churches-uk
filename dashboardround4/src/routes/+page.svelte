@@ -22,6 +22,7 @@
 	);
 	let posterLine = $derived(dark ? 'rgba(229,229,235,.16)' : 'rgba(40,50,60,.18)');
 	let posterColor = $derived(dark ? '#f79d5c' : '#a8410f');
+	let densityMode = $derived(dash.mapMode === 'density');
 </script>
 
 <Header />
@@ -61,21 +62,34 @@
 	     implicit rows to match the map's tall fixed height, leaving huge
 	     blank gaps under every short card. One flex container avoids that. -->
 	<div class="side-stack">
-		<MetricBarsCard />
+		<div class="metrics-slot">
+			<MetricBarsCard />
+		</div>
 
 		<!-- grouped so the donut's aspect-ratio-driven height (it grows taller
 		     as its column widens on large monitors) can never push into the
 		     mosque-ratio card below it — flexbox gap absorbs that automatically,
 		     where two independently-positioned cards previously couldn't. -->
-		<div class="donut-mosque-stack">
+		<div class="donut-mosque-stack" class:density-mode={densityMode}>
 			<DonutCard />
 			<MosqueRatioCard />
 		</div>
 
-		<LegendPanel />
-		<StatTextCard />
-		<DatasetLinkCard />
-		<Footer />
+		<!-- on mobile, density mode moves this ahead of the donut+mosque pair
+		     (see the max-width:720px `order` rules below) — category-based
+		     breakdowns matter less once the map itself is showing density. -->
+		<div class="legend-slot" class:density-mode={densityMode}>
+			<LegendPanel />
+		</div>
+		<div class="stat-slot">
+			<StatTextCard />
+		</div>
+		<div class="dataset-slot">
+			<DatasetLinkCard />
+		</div>
+		<div class="footer-slot">
+			<Footer />
+		</div>
 	</div>
 </main>
 
@@ -222,6 +236,33 @@
 			width: 100%;
 			min-width: 0;
 			max-width: none;
+		}
+		/* fixed sequence in category mode, matching original DOM order;
+		   density mode reorders only the legend ("Site density") ahead of
+		   the donut+mosque pair — everything else keeps its place. */
+		.metrics-slot {
+			order: 1;
+		}
+		.donut-mosque-stack {
+			order: 2;
+		}
+		.legend-slot {
+			order: 3;
+		}
+		.stat-slot {
+			order: 4;
+		}
+		.dataset-slot {
+			order: 5;
+		}
+		.footer-slot {
+			order: 6;
+		}
+		.donut-mosque-stack.density-mode {
+			order: 3;
+		}
+		.legend-slot.density-mode {
+			order: 2;
 		}
 		.north-sea {
 			display: none;

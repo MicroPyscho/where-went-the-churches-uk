@@ -149,6 +149,11 @@ export function mosqueRatio(): MosqueRatioVm {
 	return { ...counts, ratio, scope, lowSample: counts.mosque > 0 && counts.mosque < 5 };
 }
 
+export function donutTitle(sel: ResolvedSelection): string {
+	if (dash.selection.level === 'uk') return 'Church converted to';
+	return `Churches in ${sel.name} converted to`;
+}
+
 export function bars(sel: ResolvedSelection): { bars: BarVm[]; caption: string } {
 	if (sel.byRegion) {
 		const arr = sel.byRegion

@@ -69,6 +69,52 @@ function buildRegionData(): Record<string, RegionComputed> {
 
 export const regionData: Record<string, RegionComputed> = buildRegionData();
 
+export interface DistrictComputed {
+	name: string;
+	region: string;
+	nation: string;
+	n: number;
+	cat: string;
+	mix: number[];
+}
+
+// Local-authority-district aggregates, derived by summing the (already
+// correctly categorised) named-city records that fall inside each district —
+// not re-derived from the raw CSV, so there's no risk of a taxonomy mismatch
+// with the rest of the dataset. Lets a map click on any district resolve to
+// real stats even though the district boundary layer itself carries no
+// conversion data of its own.
+function buildDistrictData(): Record<string, DistrictComputed> {
+	const out: Record<string, DistrictComputed> = {};
+	for (const city of GEO.cities) {
+		if (!city.districtCode) continue;
+		const code = city.districtCode;
+		if (!out[code]) {
+			out[code] = {
+				name: city.district ?? code,
+				region: city.region,
+				nation: city.nation,
+				n: 0,
+				cat: 'unknown',
+				mix: Array(GEO.cats.length).fill(0)
+			};
+		}
+		out[code].n += city.n;
+		city.mix.forEach((v, i) => (out[code].mix[i] += v));
+	}
+	for (const code in out) {
+		const mix = out[code].mix;
+		let bi = 0;
+		mix.forEach((v, i) => {
+			if (v > mix[bi]) bi = i;
+		});
+		out[code].cat = GEO.cats[bi] ?? 'unknown';
+	}
+	return out;
+}
+
+export const DISTRICT_DATA: Record<string, DistrictComputed> = buildDistrictData();
+
 export const COUNTRY_ORDER = ['England', 'Scotland', 'Wales'];
 
 // Coordinate-derived residential:mosque counts (see

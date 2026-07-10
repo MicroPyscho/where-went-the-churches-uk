@@ -1,12 +1,13 @@
 <script lang="ts">
-	import { resolveSelection, donutForMix } from '$lib/viewmodel';
+	import { resolveSelection, donutForMix, donutTitle } from '$lib/viewmodel';
 
 	let sel = $derived(resolveSelection());
 	let donut = $derived(donutForMix(sel.mix || []));
+	let title = $derived(donutTitle(sel));
 </script>
 
 <div class="glass donut-card">
-	<p class="kicker" style="text-align:center;margin-bottom:2px;">Church converted to</p>
+	<p class="kicker" style="text-align:center;margin-bottom:2px;">{title}</p>
 	<div class="donut-wrap">
 		<svg viewBox="0 0 224 200" class="donut-svg">
 			<g transform="rotate(-90 112 100)">

@@ -158,8 +158,13 @@
 			color: dark ? 'rgba(229,229,235,.45)' : 'rgba(40,50,60,.4)',
 			weight: 1,
 			opacity: 1,
-			fillColor: 'transparent',
-			fillOpacity: 0
+			// a literal 0 fillOpacity (or fillColor:'transparent') isn't
+			// hit-tested by the browser, so clicks fall through to the
+			// choropleth region layer underneath instead of selecting this
+			// district — keep the fill effectively invisible but non-zero so
+			// every district stays clickable.
+			fillColor: '#000000',
+			fillOpacity: 0.001
 		};
 	}
 
@@ -182,6 +187,9 @@
 			onEachFeature: (f: any, layer: any) => {
 				districtLayersByCode[f.properties.code] = layer;
 				layer.bindTooltip(f.properties.name, { className: 'tc-tip', sticky: true });
+				layer.on('click', (e: any) => {
+					dash.chooseDistrict(f.properties.code, f.properties.name, e.latlng.lat, e.latlng.lng);
+				});
 			}
 		});
 		syncDistrictsVisibility();
