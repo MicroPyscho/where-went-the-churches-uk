@@ -13,7 +13,7 @@ export default defineConfig({
 
 			// Fully static build — the dashboard and signup form are entirely client-rendered.
 			adapter: adapter({
-				fallback: '200.html'
+				fallback: 'index.html'
 			})
 		})
 	]
